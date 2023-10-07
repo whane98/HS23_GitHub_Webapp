@@ -12,4 +12,3 @@ const supa = supabase.createClient(supabaseUrl, supabaseKey, {
 });
 
 export { supa }
-// comment to delete again

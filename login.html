@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunUp Login</title>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.29.0/dist/umd/supabase.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="login-box">
+    <img src="img/logo.png" alt="RunUp Logo" id="logo-home">
+
+    <div class="login-formular">
+        <label for="uname"><b>E-Mailadresse</b></label>
+        <input type="text" placeholder="E-Mailadresse eingeben" name="uname" required>
+    
+        <label for="psw"><b>Passwort</b></label>
+        <input type="password" placeholder="Passwort eingeben" name="psw" required>
+    <!--
+        <button type="submit" id="button-login">Login</button>
+
+        <label id="angemeldet-bleiben"><input type="checkbox" checked="checked" name="remember">Angemeldet bleiben</label>
+        -->
+
+      </div>
+<!--
+      <button type="button" id="button-login"><a href="login.html" formtarget="_blank">login</a></button>
+-->
+
+    <p id="registrierungs-frage">Noch nicht registriert?</p>
+    <button type="button" id="button-registrierung"><a href="Seite.html" formtarget="_blank">registrieren</a></button>
+</div>
+
+<div class="balken">
+    <div id="balken-1"></div>
+    <div id="balken-2"></div>
+    <div id="balken-3"></div>
+</div>
+
+    <script type="module" src="supabase.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
