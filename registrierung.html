@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung</title>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.29.0/dist/umd/supabase.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="login-box">
+    <img src="img/logo.png" alt="RunUp Logo" id="logo-home">
+
+    <div class="login-formular">
+        <label for="uname"><b>Name</b></label>
+        <input type="text" placeholder="Name eingeben" name="uname" required>
+    
+        <label for="psw"><b>Vorname</b></label>
+        <input type="password" placeholder="Vorname eingeben" name="psw" required>
+
+        <label for="psw"><b>E-Mailadresse</b></label>
+        <input type="password" placeholder="E-Mailadresse eingeben" name="psw" required>
+
+        <label for="psw"><b>Passwort</b></label>
+        <input type="password" placeholder="Passwort eingeben" name="psw" required>
+    <!--
+        <button type="submit" id="button-login">Login</button>
+
+        <label id="angemeldet-bleiben"><input type="checkbox" checked="checked" name="remember">Angemeldet bleiben</label>
+        -->
+
+      </div>
+<!--
+      <button type="button" id="button-login"><a href="login.html" formtarget="_blank">login</a></button>
+-->
+</div>
+
+<div class="level-uebersicht">
+    <div id="level-uebersicht-text">
+    <h2>Mein Level</h2>    
+    <p id="waehle-niveau">Wähle hier dein Fitness-Niveau aus.</p>
+    </div>
+    <div id="level-uebersicht-boxen">
+        <div id="level-uebersicht-box-1">
+            <h2 id="level-uebersicht-titel">Beginner</h2><p>Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten. Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten.</p>
+        </div>
+        <div id="level-uebersicht-box-2">
+            <h2 id="level-uebersicht-titel">Fortgeschritten</h2><p>Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten. Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten.</p>
+        </div>
+        <div id="level-uebersicht-box-3">
+            <h2 id="level-uebersicht-titel">Erfahrene</h2><p>Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten. Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten.</p>
+        </div>
+        <div id="level-uebersicht-box-4">
+            <h2 id="level-uebersicht-titel">Leistungssport</h2><p>Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten. Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten.</p>
+        </div>
+    </div>
+    <button type="button" id="button-registrierung-aktiv"><a href="registrierung.html" formtarget="_blank">registrieren</a></button>
+</div>
+
+<div class="balken">
+    <div id="balken-1"></div>
+    <div id="balken-2"></div>
+    <div id="balken-3"></div>
+</div>
+
+    <script type="module" src="supabase.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>

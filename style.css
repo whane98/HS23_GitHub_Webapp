@@ -97,13 +97,17 @@
 
 }
 
+h2 {
+    color: white;
+}
+
 .login-box {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;  
-  height: 700px;
+  height: 650px;
   gap: 10px;
 }
 
@@ -177,6 +181,21 @@ a:visited {
    background-color: #E7EF75; /* Change the background color on hover */
 }
 
+#button-registrierung-aktiv {
+  width: 13%;
+  background-color: #E7EF75;
+  border: none;
+  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: white; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em; /* Adjust font size as needed */
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
 #motivation {
     color: white;
 }
@@ -203,6 +222,47 @@ input[type=text], input[type=password] {
 #angemeldet-bleiben {
   color: white;
 }
+
+
+
+#level-uebersicht-text {
+  height: auto;
+  width: 55em;
+  margin-left: 33%;
+  margin-bottom: 2em;
+  padding: 30px;
+  color: white;
+}
+
+#level-uebersicht-titel {
+  color: black;
+  margin-bottom: 0.5em;
+}
+
+#level-uebersicht-box-1, #level-uebersicht-box-2, #level-uebersicht-box-3, #level-uebersicht-box-4 { 
+  height: auto;
+  width: 65%;
+  margin-left: 35%;
+  margin-bottom: 2em;
+  padding: 30px;
+  background-color: #E4EF75;
+  border-radius: 20px 0 0 20px;
+
+}
+
+#button-registrierung-aktiv {
+  margin-left: 35%;
+  margin-top: 4em;
+  margin-bottom: 10em;
+  background-color: #262726;
+}
+
+
+
+
+
+
+
 
 .balken {
   width: 100%;
