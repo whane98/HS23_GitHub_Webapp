@@ -6,7 +6,7 @@
     border: 0;
     outline: 0;
     font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     vertical-align: baseline;
     background: transparent;
   }
@@ -153,7 +153,6 @@ a:visited {
     text-align: center;
     text-decoration: none;
     font-size: 1em; /* Adjust font size as needed */
-    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
@@ -172,7 +171,6 @@ a:visited {
    text-align: center;
    text-decoration: none;
    font-size: 1em; /* Adjust font size as needed */
-   font-family: Arial, Helvetica, sans-serif;
    cursor: pointer;
    transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
@@ -191,7 +189,6 @@ a:visited {
   text-align: center;
   text-decoration: none;
   font-size: 1em; /* Adjust font size as needed */
-  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
