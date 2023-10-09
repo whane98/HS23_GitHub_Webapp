@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header-Footer</title>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.29.0/dist/umd/supabase.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        header {
+            height: 4rem;
+            background-color: #262726;
+            width: 100vw;
+        }
+            
+        #logo-header-div, #profilbild-div, #einstellungen-div {
+            width: 4rem;
+            height: 4rem;
+            background-color: red;
+            float: left;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #logo-header, #profilbild, #einstellungen {
+            max-width: 4rem;
+            max-height: 3rem;
+        }
+
+        #profilbild-div, #einstellungen-div {
+            float: right;
+        }
+
+            /* header
+            padding: 1rem;
+            overflow: hidden;
+        }
+
+        #logo-header {
+            position: absolute;
+            width: 8%;
+            float:left;
+        }
+
+       #einstellungen, #profilbild {
+            width: 2%;
+            float:right;
+        }
+
+        #profilbild {
+            margin-left: 1rem;
+        }
+*/
+
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <div id="logo-header-div"><img src="img/logo.png" id="logo-header" alt="Logo"></div>
+    <div id="profilbild-div"><img src="img/profil.png" id="profilbild" alt="Profil"></div>
+    <div id="einstellungen-div"><img src="img/einstellungen.png" id="einstellungen" alt="Einstellungen"></div>
+</header>
+
+
+<footer>
+    <img src="img/twitter.png" id="twitter" alt="X">
+    <img src="img/facebook.png" id="facebook" alt="Facebook">
+    <img src="img/instagram.png" id="instagram" alt="Instagram">
+</footer>
+
+
+    <script type="module" src="supabase.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
