@@ -3,9 +3,43 @@ import { supa } from "/supabase.js";
 console.log("00 JavaScript verbunden")
 
 
-var divElement = document.getElementById('level-uebersicht-box-1');
-divElement.addEventListener('click', changeColor)
-function changeColor() {
-    console.log(this)
-    divElement.style.backgroundColor = '#E4EF75';
-}
+// Select all elements with the class 'level-uebersicht'
+var levelUebersichtElements = document.querySelectorAll('.level-uebersicht');
+
+// Iterate through the selected elements (if needed)
+levelUebersichtElements.forEach(function(element) {
+    // Accessing child elements within each 'level-uebersicht' element
+    var box1 = element.querySelector('#level-uebersicht-box-1');
+    var box2 = element.querySelector('#level-uebersicht-box-2');
+    var box3 = element.querySelector('#level-uebersicht-box-3');
+    var box4 = element.querySelector('#level-uebersicht-box-4');
+
+    // Function to handle box click
+    function handleBoxClick(event) {
+        // Reset the background color of all boxes to white
+        [box1, box2, box3, box4].forEach(function(box) {
+            box.style.backgroundColor = 'white';
+        });
+
+        // Change the background color of the clicked box to yellow
+        event.currentTarget.style.backgroundColor = '#E4EF75';
+    }
+
+    // Add click event listeners to the boxes
+    box1.addEventListener('click', handleBoxClick);
+    box2.addEventListener('click', handleBoxClick);
+    box3.addEventListener('click', handleBoxClick);
+    box4.addEventListener('click', handleBoxClick);
+});
+
+
+
+
+
+
+
+   // Do something with the individual 'level-uebersicht-box' elements
+    // For example, you can access their children like this:
+    // var box1Title = box1.querySelector('.level-uebersicht-titel');
+    // var box2Description = box2.querySelector('p');
+    // ... and so on
