@@ -145,7 +145,7 @@ a:visited {
     display: inline-block; */
  
     width: 13%;
-    background-color: #E7EF75;
+    background-color: #ffffff;
     border: none;
     border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
     padding: 10px 20px; /* Adjust padding as needed */
@@ -234,7 +234,7 @@ input[type=text], input[type=password] {
   color: white;
 }
 
-#level-uebersicht-titel {
+.level-uebersicht-titel {
   color: black;
   margin-bottom: 0.5em;
 }
@@ -245,7 +245,7 @@ input[type=text], input[type=password] {
   margin-left: 35%;
   margin-bottom: 2em;
   padding: 30px;
-  background-color: #E4EF75;
+  background-color: white;
   border-radius: 20px 0 0 20px;
 
 }
@@ -263,9 +263,11 @@ input[type=text], input[type=password] {
 
 
 
-
 .balken {
-  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; /* Ensure the .balken div takes the full width of its parent */
+  margin-bottom: 1em; /* Adjust the margin-bottom value as needed */
 }
 
 #balken-1 {
@@ -293,6 +295,100 @@ input[type=text], input[type=password] {
   background-color: #E4EF75;
   border-radius: 20px 0 0 20px;
 }
+
+#balken-5 {
+  width: 30%;
+  height: 1em;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #E4EF75;
+  border-radius: 0 20px 20px 0;
+  margin-bottom: 0.1em; /* Adjust the margin-bottom value as needed */
+}
+
+#balken-4 {
+  width: 20%;
+  height: 1em;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #E4EF75;
+  border-radius: 0 20px 20px 0;
+  margin-bottom: 1em; /* Adjust the margin-bottom value as needed */
+}
+
+#balken-7 {
+  width: 8%;
+  height: 1em;
+  background-color: #E4EF75;
+  border-radius: 0 20px 20px 0;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+#balken-6 {
+  width: 30%;
+  height: 1em;
+  background-color: #E4EF75;
+  border-radius: 0 20px 20px 0;
+  margin-bottom: 3em; 
+}
+
+#details-header {
+  background-color: #E4EF75;
+  height: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em; /* Adjust the margin-bottom value to control the space between balken-5 and details-header */
+}
+
+#details-titel {
+  color: black;
+  font-size: 5em;
+  margin: 0; /* Remove any default margins around h1 element */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 20vw;
+  height: 15vh;
+  width: 350px;
+  height: 250px;
+  background-color: #E4EF75;
+  color: black;
+  border-radius: 10px;
+  margin: 80px;
+  display: flex;
+  justify-content: left;
+  align-items: last baseline;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: 40vw;
+      height: 30vh;
+  }
+}
+
+.distanz-container {
+  display: flex;
+  align-items: center;
+}
+
+#titel-distanz {
+  font-size: 3em;
+  margin-left: 4.3em;
+  margin-top: 2em;
+}
+
 
 
   /* ------------------------make it responsive please---------------------------------------- */
