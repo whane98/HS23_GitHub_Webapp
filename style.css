@@ -92,7 +92,7 @@
   body {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: rgb(31, 29, 29);
    /* overflow-y: hidden; */
 
 }
@@ -196,6 +196,11 @@ a:visited {
   transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
+#button-registrierung-aktiv:hover {
+  background-color: #E7EF75; /* Change the background color on hover */
+}
+
+
 #motivation {
     color: white;
 }
@@ -239,13 +244,14 @@ input[type=text], input[type=password] {
 }
 
 #level-uebersicht-box-1, #level-uebersicht-box-2, #level-uebersicht-box-3, #level-uebersicht-box-4 { 
-  height: auto;
-  width: 65%;
-  margin-bottom: 2rem;
-  padding: 30px;
-  background-color: white;
-  border-radius: 20px 20px 20px 20px;
-
+    height: auto;
+    width: 65%;
+    margin-bottom: 2rem;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 #button-registrierung-aktiv {
@@ -260,24 +266,26 @@ input[type=text], input[type=password] {
 
 
 
+/*
 
 .balken {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  width: 100%; /* Ensure the .balken div takes the full width of its parent */
+  width: 100%; /* Ensure the .balken div takes the full width of its parent */ /*
   gap: 1rem; /* Adjust the margin-bottom value as needed */
 
-}
+
+/*
 
 .balken-left {
   display: flex;
   flex-direction: column;
-  width: 100%; /* Ensure the .balken div takes the full width of its parent */
+  width: 100%; /* Ensure the .balken div takes the full width of its parent */ /*
   gap: 1rem; /* Adjust the margin-bottom value as needed */
 
-}
 
+/*
 
 #balken-5 {
   width: 30%;
@@ -309,6 +317,7 @@ input[type=text], input[type=password] {
   border-radius: 0 20px 20px 0;
   margin-bottom: 3em; 
 }
+*/
 
 #details-header {
   background-color: #E4EF75;
@@ -318,6 +327,7 @@ input[type=text], input[type=password] {
   align-items: center;
   margin-bottom: 1em; /* Adjust the margin-bottom value to control the space between balken-5 and details-header */
 }
+
 
 #details-titel {
   color: black;
@@ -331,17 +341,16 @@ input[type=text], input[type=password] {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-bottom: 12rem;
 }
 
 .card {
   width: 20vw;
-  height: 15vh;
-  width: 350px;
-  height: 250px;
-  background-color: #E4EF75;
-  color: black;
+  height: 30vh;
+  background: linear-gradient(to bottom, #E4EF75 0%, #E4EF75 82%, #262726 82%, #262726 100%);
+  color: white;
   border-radius: 10px;
-  margin: 80px;
+  margin: 5rem;
   display: flex;
   justify-content: left;
   align-items: last baseline;
@@ -361,10 +370,44 @@ input[type=text], input[type=password] {
 }
 
 #titel-distanz {
-  font-size: 3em;
-  margin-left: 4.3em;
-  margin-top: 2em;
+  font-size: 3rem;
+  margin-left: 12rem;
+  margin-top: 4rem;
 }
+
+.intervall-container {
+  display: flex;
+  align-items: center;
+}
+
+#titel-intervall {
+  font-size: 3rem;
+  margin-left: 12rem;
+  margin-top: 4rem;
+}
+
+.sprint-container {
+  display: flex;
+  align-items: center;
+}
+
+#titel-sprint {
+  font-size: 3rem;
+  margin-left: 12rem;
+  margin-top: 4rem;
+}
+
+.dauerlauf-container {
+  display: flex;
+  align-items: center;
+}
+
+#titel-dauerlauf {
+  font-size: 3rem;
+  margin-left: 12rem;
+  margin-top: 4rem;
+}
+
 
 
 
