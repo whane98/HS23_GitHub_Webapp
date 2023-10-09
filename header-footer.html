@@ -12,50 +12,68 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
     <style>
-        header {
-            height: 4rem;
-            background-color: #262726;
-            width: 100vw;
-        }
-            
-        #logo-header-div, #profilbild-div, #einstellungen-div {
-            width: 4rem;
-            height: 4rem;
-            background-color: red;
-            float: left;
-            text-align: center;
-            justify-content: center;
-        }
 
-        #logo-header, #profilbild, #einstellungen {
-            max-width: 4rem;
-            max-height: 3rem;
-        }
+header {
+    height: 4rem;
+    background-color: #262726;
+    width: 100vw;
+    vertical-align: center;
+    text-align: center;
+}
 
-        #profilbild-div, #einstellungen-div {
-            float: right;
-        }
+#logo-header-div {
+   /* background-color: red; */
+    height: 4rem;
+    width: 6rem;
+    float: left; /* Float to the left */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-            /* header
-            padding: 1rem;
-            overflow: hidden;
-        }
+#logo-header {
+    width: 80%;
+    float: right;
+    margin: 0;
+}
 
-        #logo-header {
-            position: absolute;
-            width: 8%;
-            float:left;
-        }
+#profilbild-und-einstellungen-div {
+    /* background-color: red; */
+    height: 4rem;
+    width: 6rem;
+    float: right; /* Float to the right */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-       #einstellungen, #profilbild {
-            width: 2%;
-            float:right;
-        }
+#profilbild, #einstellungen {
+    width: auto;
+    max-height: 50%;
+    float: left;
+    padding-right: 1.5rem;
+}
 
-        #profilbild {
-            margin-left: 1rem;
-        }
-*/
+footer {
+    height: 8rem;
+    background-color: #262726;
+    width: 100vw;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+#footer-div {
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+}
+
+
+#twitter, #facebook, #instagram {
+    height: 2rem;
+}
 
 
     </style>
@@ -65,18 +83,24 @@
 <body>
 
 <header>
-    <div id="logo-header-div"><img src="img/logo.png" id="logo-header" alt="Logo"></div>
-    <div id="profilbild-div"><img src="img/profil.png" id="profilbild" alt="Profil"></div>
-    <div id="einstellungen-div"><img src="img/einstellungen.png" id="einstellungen" alt="Einstellungen"></div>
+    <div id="logo-header-div">
+        <a href="details.html"><img src="img/logo.png" id="logo-header" alt="Logo"></a>
+    </div>
+    <div id="profilbild-und-einstellungen-div">
+        <a href="profil.html"><img src="img/profil.png" id="profilbild" alt="Profil"></a>
+        <a href="einstellungen.html"><img src="img/einstellungen.png" id="einstellungen" alt="Einstellungen"></a>
+    </div>
 </header>
 
+<br />
 
 <footer>
-    <img src="img/twitter.png" id="twitter" alt="X">
-    <img src="img/facebook.png" id="facebook" alt="Facebook">
-    <img src="img/instagram.png" id="instagram" alt="Instagram">
+    <div id="footer-div">
+    <a href="https:/www.twitter.com" target="_blank"><img src="img/icons8-twitter.svg" id="twitter" alt="X"></a>
+    <a href="https:/www.facebook.com" target="_blank"><img src="img/icons8-facebook.svg" id="facebook" alt="Facebook"></a>
+    <a href="https:/www.instagram.com" target="_blank"><img src="img/icons8-instagram.svg" id="instagram" alt="Instagram"></a>
+    </div>
 </footer>
-
 
     <script type="module" src="supabase.js"></script>
     <script type="module" src="script.js"></script>
