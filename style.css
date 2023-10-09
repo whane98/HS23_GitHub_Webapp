@@ -265,9 +265,19 @@ input[type=text], input[type=password] {
 
 .balken {
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
   width: 100%; /* Ensure the .balken div takes the full width of its parent */
-  margin-bottom: 1em; /* Adjust the margin-bottom value as needed */
+  gap: 1rem; /* Adjust the margin-bottom value as needed */
+
+}
+
+.balken-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensure the .balken div takes the full width of its parent */
+  gap: 1rem; /* Adjust the margin-bottom value as needed */
+
 }
 
 #balken-1 {
@@ -299,21 +309,15 @@ input[type=text], input[type=password] {
 #balken-5 {
   width: 30%;
   height: 1em;
-  display: flex;
-  justify-content: flex-end;
   background-color: #E4EF75;
-  border-radius: 0 20px 20px 0;
-  margin-bottom: 0.1em; /* Adjust the margin-bottom value as needed */
+  border-radius: 20px 0 0 20px;
 }
 
 #balken-4 {
   width: 20%;
   height: 1em;
-  display: flex;
-  justify-content: flex-end;
   background-color: #E4EF75;
-  border-radius: 0 20px 20px 0;
-  margin-bottom: 1em; /* Adjust the margin-bottom value as needed */
+  border-radius: 20px 0 0 20px;
 }
 
 #balken-7 {
