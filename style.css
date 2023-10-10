@@ -97,6 +97,68 @@
 
 }
 
+header {
+  height: 4rem;
+  background-color: #262726;
+  width: 100vw;
+  vertical-align: center;
+  text-align: center;
+}
+
+#logo-header-div {
+ /* background-color: red; */
+  height: 4rem;
+  width: 6rem;
+  float: left; /* Float to the left */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-header {
+  width: 80%;
+  float: right;
+  margin: 0;
+}
+
+#profilbild-und-einstellungen-div {
+  /* background-color: red; */
+  height: 4rem;
+  width: 6rem;
+  float: right; /* Float to the right */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profilbild, #einstellungen {
+  width: auto;
+  max-height: 50%;
+  float: left;
+  padding-right: 1.5rem;
+}
+
+footer {
+  height: 8rem;
+  background-color: #262726;
+  width: 100vw;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+}
+
+#footer-div {
+  /* background-color: red; */
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+}
+
+
+#twitter, #facebook, #instagram {
+  height: 2rem;
+}
+
 h2 {
     color: white;
 }
