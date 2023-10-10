@@ -108,11 +108,11 @@ h2 {
   justify-content: center;
   align-items: center;  
   height: 650px;
-  gap: 10px;
 }
 
 .login-formular {
   width: 30%;
+  margin-bottom: 4rem;
 }
 
 /*
@@ -152,9 +152,10 @@ a:visited {
     color: black; /* Text color */
     text-align: center;
     text-decoration: none;
-    font-size: 1em; /* Adjust font size as needed */
+    font-size: 1rem; /* Adjust font size as needed */
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    margin-bottom: 1rem;
 }
 
 #button-login:hover {
@@ -204,7 +205,10 @@ a:visited {
 
 #registrierungs-frage {
   color: #404140;
-  margin-top: 3em;
+}
+
+#registrierungs-frage:hover {
+  color: #E7EF75;
 }
 
 form {   
@@ -249,6 +253,7 @@ input[type=text], input[type=password] {
     border-radius: 20px;
     margin-left: auto;
     margin-right: 0;
+    cursor: pointer;
 }
 
 #button-registrierung-aktiv {
@@ -317,7 +322,7 @@ input[type=text], input[type=password] {
 */
 
 #details-header {
-  background-color: #E4EF75;
+  background-color: #E7EF75;
   height: 15em;
   display: flex;
   justify-content: center;
@@ -338,21 +343,59 @@ input[type=text], input[type=password] {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-bottom: 12rem;
+  margin-bottom: 8rem;
+}
+
+.card-container-small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-bottom: 8rem;
 }
 
 .card {
   width: 20vw;
   height: 30vh;
-  background: linear-gradient(to bottom, #E4EF75 0%, #E4EF75 82%, #262726 82%, #262726 100%);
+  background: linear-gradient(to bottom, #E7EF75 0%, #E7EF75 82%, #5e5f5e23 82%, #5e5f5e23 100%);
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 5rem;
   display: flex;
-  justify-content: left;
-  align-items: last baseline;
+  align-items: center;
   font-size: 1.5em;
+  overflow: hidden;
 }
+
+.image-container {
+  position: relative;
+  width: 100%; /* Set width to 100% to make sure the image covers the entire container */
+  height: 100%; /* Set height to 100% to make sure the image covers the entire container */
+}
+
+.card-image {
+  width: 100%; /* Set width to 100% to make sure the image covers the entire container */
+  height: 100%; /* Set height to 100% to make sure the image covers the entire container */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  border-radius: 6%;
+}
+
+.image-container span {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Set width to 100% to cover the entire bottom of the image container */
+  text-align: center; /* Center the text horizontally */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
+  color: white;
+  font-size: 1em;
+}
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .card {
@@ -405,6 +448,46 @@ input[type=text], input[type=password] {
   margin-top: 4rem;
 }
 
+.steigerungslauf-container {
+  display: flex;
+  align-items: center;
+}
+
+#titel-steigerungslauf {
+  font-size: 3rem;
+  margin-left: 12rem;
+  margin-top: 4rem;
+}
+
+#profil-header {
+  height: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em; /* Adjust the margin-bottom value to control the space between balken-5 and details-header */
+}
+
+#profil-titel {
+  color: white;
+  font-size: 5em;
+  margin: 0; /* Remove any default margins around h1 element */
+}
+
+#profil-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profilbild {
+  width: 175px; /* Set a specific width for the circular image */
+  height: 175px; /* Set a specific height for the circular image */
+  border-radius: 60%;
+  overflow: hidden; /* Ensure the image stays within the circular shape */
+}
+
+
+
 
 
 
@@ -424,10 +507,6 @@ input[type=text], input[type=password] {
       width: 20%;
     }
   
-    .login-formular {
-      
-    }
-
     #balken-1 {
       margin-top: -27.5%;
     }
