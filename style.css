@@ -302,11 +302,19 @@ input[type=text], input[type=password] {
     cursor: pointer;
 }
 
+#level-uebersicht-box-1:hover, #level-uebersicht-box-2:hover, #level-uebersicht-box-3:hover, #level-uebersicht-box-4:hover { 
+    background-color: #E7EF75;
+}
+
 #button-registrierung-aktiv {
   margin-left: 35%;
   margin-top: 4em;
   margin-bottom: 10em;
   background-color: #262726;
+}
+
+#button-registrierung-aktiv:hover {
+  background-color: #E7EF75;
 }
 
 
@@ -510,7 +518,7 @@ input[type=text], input[type=password] {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem; /* Adjust the margin-bottom value to control the space between balken-5 and details-header */
+  margin: 0; /* Adjust the margin-bottom value to control the space between balken-5 and details-header */
 }
 
 #profil-titel {
@@ -535,7 +543,7 @@ input[type=text], input[type=password] {
 }
 
 #level-uebersicht {
-  background-color: #5656565a;
+  background-color: #E7EF75;
   width: 35vw;
   height: 40vh;
   display: flex;
@@ -559,6 +567,48 @@ input[type=text], input[type=password] {
 #profil-level {
   margin: 0; /* Remove default margin for <p> element */
   align-self: flex-start; /* Align the item to the top within the flex container */
+}
+
+#level-uebersicht-pers {
+  background-color: #E7EF75;
+  width: 45vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 15px;
+}
+
+#level-box-pers {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  color: black;
+  font-weight: 900;
+  margin: 0; /* Remove default margin for <p> element */
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center;
+}
+
+#profil-level-pers {
+  margin: 0; /* Remove default margin for <p> element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Align the item to the top within the flex container */
+}
+
+#test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
 }
 
 .profil-angaben {
@@ -611,6 +661,84 @@ input[type=text], input[type=password] {
 }
   
 #button-profil-speichern:hover {
+  background-color: #E7EF75; /* Change the background color on hover */
+  color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100vw;
+  /* Add other styles for the container if needed */
+}
+
+.outer-bar {
+  width: 300px;
+  height: 20px;
+  border: 2px solid black;
+  display: flex;
+  /* Add other styles for the outer bar if needed */
+}
+
+.inner-bar {
+  height: 100%;
+  width: 50%;
+  background-color: #000000;
+  /* Add other styles for the inner bar if needed */
+}
+
+.text {
+  margin-left: 10px; /* Add some space between the outer bar and the text */
+  font-size: 1rem;
+  /* Add other styles for the text if needed */
+}
+
+
+#profil-buttons-pers {
+  display: flex;
+  flex-direction: row;
+}
+
+#button-profil-bearbeiten {
+  width: 13%;
+  background-color: #262726;
+  border: none;
+  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: white; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  margin-top: 3rem;
+  margin-left: 36rem;
+}
+  
+#button-profil-bearbeiten:hover {
+  background-color: #E7EF75; /* Change the background color on hover */
+  color: black;
+}
+
+#button-kontakt {
+  width: 13%;
+  background-color: #262726;
+  border: none;
+  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: white; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  margin-top: 3rem;
+  margin-left: 10.5rem;
+}
+  
+#button-kontakt:hover {
   background-color: #E7EF75; /* Change the background color on hover */
   color: black;
 }

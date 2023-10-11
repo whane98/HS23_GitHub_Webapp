@@ -32,14 +32,27 @@ levelUebersichtElements.forEach(function(element) {
     box4.addEventListener('click', handleBoxClick);
 });
 
-
-
-
-
-
-
    // Do something with the individual 'level-uebersicht-box' elements
     // For example, you can access their children like this:
     // var box1Title = box1.querySelector('.level-uebersicht-titel');
     // var box2Description = box2.querySelector('p');
     // ... and so on
+
+    // Select the button element
+
+
+    // Button Training
+    var button = document.getElementById('button-login');
+    var isTrainingStarted = false;
+    
+    button.addEventListener('click', function() {
+        isTrainingStarted = !isTrainingStarted;
+        if (isTrainingStarted) {
+            button.textContent = 'Training stoppen';
+            button.style.backgroundColor = 'red';
+        } else {
+            button.textContent = 'Training starten';
+            button.style.backgroundColor = ''; // Reset background color to default
+        }
+    });
+    
