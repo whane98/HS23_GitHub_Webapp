@@ -510,7 +510,7 @@ input[type=text], input[type=password] {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1em; /* Adjust the margin-bottom value to control the space between balken-5 and details-header */
+  margin-bottom: 1rem; /* Adjust the margin-bottom value to control the space between balken-5 and details-header */
 }
 
 #profil-titel {
@@ -519,18 +519,107 @@ input[type=text], input[type=password] {
   margin: 0; /* Remove any default margins around h1 element */
 }
 
-#profil-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #profilbild {
   width: 175px; /* Set a specific width for the circular image */
   height: 175px; /* Set a specific height for the circular image */
   border-radius: 60%;
   overflow: hidden; /* Ensure the image stays within the circular shape */
+  margin-bottom: 3rem;
 }
+
+#profil-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+#level-uebersicht {
+  background-color: #5656565a;
+  width: 35vw;
+  height: 40vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 15px;
+}
+
+#level-box {
+  font-size: 3rem;
+  color: black;
+  font-weight: 900;
+  margin: 0; /* Remove default margin for <p> element */
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: flex-start; /* Align items to the top */
+}
+
+#profil-level {
+  margin: 0; /* Remove default margin for <p> element */
+  align-self: flex-start; /* Align the item to the top within the flex container */
+}
+
+.profil-angaben {
+  font-size: 1.5rem;
+  align-items: flex-end;
+  margin-bottom: 1rem ;
+  margin: 0; /* Remove default margin for <p> element */
+}
+
+#profil-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#button-level-bearbeiten {
+  width: 13%;
+  background-color: #262726;
+  border: none;
+  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: white; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  margin-top: 3rem;
+  margin-left: 36rem;
+}
+  
+#button-level-bearbeiten:hover {
+  background-color: #E7EF75; /* Change the background color on hover */
+  color: black;
+}
+
+#button-profil-speichern {
+  width: 13%;
+  background-color: #262726;
+  border: none;
+  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: white; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  margin-top: 3rem;
+  margin-left: 10.5rem;
+}
+  
+#button-profil-speichern:hover {
+  background-color: #E7EF75; /* Change the background color on hover */
+  color: black;
+}
+
+
+
+
+
+
 
   /* ------------------------training-start.html---------------------------------------- */
 
@@ -572,6 +661,7 @@ footer {
   display: flex;
   justify-content: center; /* Horizontally center the content */
   align-items: center; /* Vertically center the content */
+  margin-top: 2rem;
 }
 
 #footer-div {
@@ -592,6 +682,11 @@ footer {
 
 
 
+  /* ------------------------Kontakt.html---------------------------------------- */
+
+  #runup-mail, runup-telefonnummer {
+    color: white;
+  }
 
 
   /* ------------------------make it responsive please---------------------------------------- */
