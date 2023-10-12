@@ -106,10 +106,9 @@ header {
 }
 
 #logo-header-div {
- /* background-color: red; */
   height: 4rem;
   width: 6rem;
-  float: left; /* Float to the left */
+  float: left; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,10 +121,9 @@ header {
 }
 
 #profilbild-und-einstellungen-div {
-  /* background-color: red; */
   height: 4rem;
   width: 6rem;
-  float: right; /* Float to the right */
+  float: right; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,55 +189,55 @@ a:visited {
     width: 13%;
     background-color: #ffffff;
     border: none;
-    border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
-    padding: 10px 20px; /* Adjust padding as needed */
-    color: black; /* Text color */
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    color: black; 
     text-align: center;
     text-decoration: none;
-    font-size: 1rem; /* Adjust font size as needed */
+    font-size: 1rem; 
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition for background color change */
     margin-bottom: 1rem;
 }
 
 #button-login:hover {
-    background-color: #E7EF75; /* Change the background color on hover */
+    background-color: #E7EF75; 
 }
 
 #button-registrierung {
    width: 13%;
-   background-color: #262726;
+   background-color: #323432;
    border: none;
-   border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
-   padding: 10px 20px; /* Adjust padding as needed */
-   color: white; /* Text color */
+   border-radius: 20px; 
+   padding: 10px 20px; 
+   color: white; 
    text-align: center;
    text-decoration: none;
-   font-size: 1em; /* Adjust font size as needed */
+   font-size: 1em; 
    cursor: pointer;
    transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
 #button-registrierung:hover {
-   background-color: #E7EF75; /* Change the background color on hover */
+   background-color: #E7EF75; 
 }
 
 #button-registrierung-aktiv {
   width: 13%;
   background-color: #E7EF75;
   border: none;
-  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
-  padding: 10px 20px; /* Adjust padding as needed */
-  color: white; /* Text color */
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  color: white; 
   text-align: center;
   text-decoration: none;
-  font-size: 1em; /* Adjust font size as needed */
+  font-size: 1em; 
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
 #button-registrierung-aktiv:hover {
-  background-color: #E7EF75; /* Change the background color on hover */
+  background-color: #E7EF75; 
 }
 
 
@@ -308,7 +306,7 @@ input[type=text], input[type=password] {
   margin-left: 35%;
   margin-top: 4em;
   margin-bottom: 10em;
-  background-color: #262726;
+  background-color: #323432;
 }
 
 #button-registrierung-aktiv:hover {
@@ -526,8 +524,8 @@ input[type=text], input[type=password] {
 }
 
 #profilbild {
-  width: 175px; /* Set a specific width for the circular image */
-  height: 175px; /* Set a specific height for the circular image */
+  width: 175px; 
+  height: 175px; 
   border-radius: 60%;
   overflow: hidden; /* Ensure the image stays within the circular shape */
   margin-bottom: 3rem;
@@ -537,7 +535,7 @@ input[type=text], input[type=password] {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem; /* Adjust the margin as needed */
+  margin-bottom: 1rem; 
 }
 
 #level-uebersicht {
@@ -623,35 +621,35 @@ input[type=text], input[type=password] {
 
 #button-level-bearbeiten {
   width: 13%;
-  background-color: #262726;
+  background-color: #323432;
   border: none;
-  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
-  padding: 10px 20px; /* Adjust padding as needed */
-  color: white; /* Text color */
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  color: white; 
   text-align: center;
   text-decoration: none;
-  font-size: 1em; /* Adjust font size as needed */
+  font-size: 1em; 
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  transition: background-color 0.3s ease; 
   margin-top: 3rem;
   margin-left: 36rem;
 }
   
 #button-level-bearbeiten:hover {
-  background-color: #E7EF75; /* Change the background color on hover */
+  background-color: #E7EF75; 
   color: black;
 }
 
 #button-profil-speichern {
   width: 13%;
-  background-color: #262726;
+  background-color: #323432;
   border: none;
-  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
-  padding: 10px 20px; /* Adjust padding as needed */
-  color: white; /* Text color */
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  color: white; 
   text-align: center;
   text-decoration: none;
-  font-size: 1em; /* Adjust font size as needed */
+  font-size: 1em; 
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition for background color change */
   margin-top: 3rem;
@@ -659,7 +657,7 @@ input[type=text], input[type=password] {
 }
   
 #button-profil-speichern:hover {
-  background-color: #E7EF75; /* Change the background color on hover */
+  background-color: #E7EF75; 
   color: black;
 }
 
@@ -669,7 +667,6 @@ input[type=text], input[type=password] {
   justify-content: center;
   height: 200px;
   width: 100vw;
-  /* Add other styles for the container if needed */
 }
 
 .outer-bar {
@@ -677,20 +674,17 @@ input[type=text], input[type=password] {
   height: 20px;
   border: 2px solid black;
   display: flex;
-  /* Add other styles for the outer bar if needed */
 }
 
 .inner-bar {
   height: 100%;
   width: 50%;
   background-color: #000000;
-  /* Add other styles for the inner bar if needed */
 }
 
 .text {
   margin-left: 10px; /* Add some space between the outer bar and the text */
   font-size: 1rem;
-  /* Add other styles for the text if needed */
 }
 
 
@@ -701,14 +695,14 @@ input[type=text], input[type=password] {
 
 #button-profil-bearbeiten {
   width: 13%;
-  background-color: #262726;
+  background-color: #323432;
   border: none;
-  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
-  padding: 10px 20px; /* Adjust padding as needed */
-  color: white; /* Text color */
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  color: white; 
   text-align: center;
   text-decoration: none;
-  font-size: 1em; /* Adjust font size as needed */
+  font-size: 1em; 
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition for background color change */
   margin-top: 3rem;
@@ -716,20 +710,20 @@ input[type=text], input[type=password] {
 }
   
 #button-profil-bearbeiten:hover {
-  background-color: #E7EF75; /* Change the background color on hover */
+  background-color: #E7EF75; 
   color: black;
 }
 
 #button-kontakt {
   width: 13%;
-  background-color: #262726;
+  background-color: #323432;
   border: none;
-  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
-  padding: 10px 20px; /* Adjust padding as needed */
-  color: white; /* Text color */
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  color: white; 
   text-align: center;
   text-decoration: none;
-  font-size: 1em; /* Adjust font size as needed */
+  font-size: 1em; 
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition for background color change */
   margin-top: 3rem;
@@ -737,12 +731,68 @@ input[type=text], input[type=password] {
 }
   
 #button-kontakt:hover {
-  background-color: #E7EF75; /* Change the background color on hover */
+  background-color: #E7EF75; 
   color: black;
 }
 
+  /* ------------------------level-bearbeiten.html---------------------------------------- */
 
+  #level-uebersicht-text-v2 {
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    color: white;
+} 
 
+  .cards-v2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 3rem;
+    margin: 0 15% 10%  15%;
+  }
+  
+  .card-v2 {
+    background-color: white;
+    padding: 1rem;
+    height: auto;
+    border-radius: 20px; 
+    padding: 30px;
+  }
+  
+
+  
+  #button-speichern {
+      width: 13%;
+      background-color: #323432;
+      border: none;
+      border-radius: 20px; 
+      padding: 10px 20px; 
+      color: black; 
+      text-align: center;
+      text-decoration: none;
+      font-size: 1rem; 
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Smooth transition for background color change */
+      margin-left: 15%;
+      margin-bottom: 10rem;
+  }
+  
+  #button-speichern:hover {
+      background-color: #E7EF75; 
+  }
+  
+  
+  /* If screen is larger than 600px, do it in 2 column */
+  @media (min-width: 600px) {
+    .cards-v2 { 
+      grid-template-columns: repeat(2, 1fr); 
+  }
+  
+  
+  }
 
 
 
@@ -790,7 +840,6 @@ footer {
 }
 
 #footer-div {
-  /* background-color: red; */
   text-align: center;
   display: flex;
   gap: 1rem;
@@ -849,6 +898,15 @@ footer {
     #balken-3 {
       margin-top: 10%;
     }
+
+    #level-uebersicht-text-v2 {
+      height: ;
+    }
+
+    #button-speichern {
+      width: 20%;
+    }
+
   }
   
 
@@ -880,6 +938,11 @@ footer {
   margin-top: 30%;
   width: 100%;
 }
+
+#button-speichern {
+  width: 25%;
+}
+
 
 
 }
