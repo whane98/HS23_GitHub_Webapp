@@ -180,6 +180,30 @@ a:visited {
     text-decoration: none;
   }
 
+  #button-login-start {
+    /* position: relative; 
+     top: 50%;
+     left: 50%; 
+     transform: translate(-50%, -50%);
+     display: inline-block; */
+     width: 13%;
+     background-color: #ffffff;
+     border: none;
+     border-radius: 20px; 
+     padding: 10px 20px; 
+     color: black; 
+     text-align: center;
+     text-decoration: none;
+     font-size: 1rem; 
+     cursor: pointer;
+     transition: background-color 0.3s ease; /* Smooth transition for background color change */
+     margin-bottom: 1rem;
+ }
+ 
+ #button-login-start:hover {
+     background-color: #E7EF75; 
+ }
+
 #button-login {
    /* position: relative; 
     top: 50%;
@@ -222,6 +246,13 @@ a:visited {
    background-color: #E7EF75; 
 }
 
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+}
+
 #button-registrierung-aktiv {
   width: 13%;
   background-color: #E7EF75;
@@ -233,11 +264,29 @@ a:visited {
   text-decoration: none;
   font-size: 1em; 
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  transition: background-color 0.3s ease;
 }
+
+.error-message {
+  color: red;
+  margin-top: 10px; /* Add space between button and error message */
+  color: #ff0000; /* Red color for error message */
+  font-size: 0.9em; /* Adjust the font size */
+  margin-top: 10px; /* Add space between button and error message */
+  text-align: center; /* Center the text */
+  background-color: #ffe0e0; /* Light red background color */
+  padding: 8px 12px; /* Add padding for the error message */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #ff0000; /* Red border */
+  max-width: 300px; /* Set maximum width for the error message */
+} 
+
+
+
 
 #button-registrierung-aktiv:hover {
   background-color: #E7EF75; 
+  color: black;
 }
 
 
@@ -882,6 +931,10 @@ footer {
     #button-login {
       width: 15%;
     }
+
+    #button-login-start {
+      width: 15%;
+    }
   
     #button-registrierung {
       width: 17%;
@@ -899,9 +952,9 @@ footer {
       margin-top: 10%;
     }
 
-    #level-uebersicht-text-v2 {
+    /* #level-uebersicht-text-v2 {
       height: ;
-    }
+    } */
 
     #button-speichern {
       width: 20%;
@@ -915,6 +968,10 @@ footer {
 @media(max-width: 1000px) {       /*   574px */
   #button-login {
     width: 28%;
+}
+
+#button-login-start {
+  width: 28%;
 }
 
   #button-registrierung {

@@ -30,6 +30,25 @@
     <img src="img/logo.png" alt="RunUp Logo" id="logo-home">
 
     <div class="login-formular">
+        <label for="lastname"></label>
+        <input type="text" placeholder="Name eingeben" name="lastname" required />
+    
+        <label for="firstname"></label>
+        <input type="text" placeholder="Vorname eingeben" name="firstname" required />
+
+        <label for="mail"></label>
+        <input type="text" placeholder="E-Mailadresse eingeben" name="mail" required />
+
+        <label for="psw"></label>
+        <input type="password" placeholder="Passwort eingeben" name="psw" required />
+
+        <label for="psw"></label>
+        <input type="password" placeholder="Passwort wiederholen" name="psw" required />
+
+    </div>
+</div>
+
+<!--   <div class="login-formular">
         <label for="lastname"><b></b></label>
         <input type="text" placeholder="Name eingeben" name="lastname" required />
     
@@ -45,8 +64,30 @@
         <label for="psw"><b></b></label>
         <input type="password" placeholder="Passwort wiederholen" name="psw" required />
 
-    </div>
+    </div> -->
+
+    
+    <!-- <div class="login-formular">
+    <label for="lastname"><b>Lastname</b></label>
+    <input type="text" placeholder="Name eingeben" name="lastname" required />
+
+    <label for="firstname"><b>Firstname</b></label>
+    <input type="text" placeholder="Vorname eingeben" name="firstname" required />
+
+    <label for="mail"><b>Email</b></label>
+    <input type="email" placeholder="E-Mailadresse eingeben" name="mail" required />
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Passwort eingeben" name="psw" required />
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Passwort wiederholen" name="psw-repeat" required />
 </div>
+
+<button type="button" id="button-registrierung-aktiv">registrieren</button>
+<p id="error-message" style="color: red;"></p>
+-->
+
     <!--
         <button type="submit" id="button-login">Login</button>
 
@@ -77,7 +118,11 @@
             <h2 class="level-uebersicht-titel">Leistungssport</h2><p>Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten. Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten.</p>
         </div>
     </div>
-    <button type="button" id="button-registrierung-aktiv"><a href="details.html" formtarget="_blank">registrieren</a></button>
+    <div class="button-container">
+        <button type="button" id="button-registrierung-aktiv">registrieren</button>
+        <p id="error-message" class="error-message"></p>
+    </div>
+    
 </div>
 
 <footer>

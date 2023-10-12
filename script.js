@@ -40,6 +40,30 @@ levelUebersichtElements.forEach(function(element) {
 
     // Select the button element
 
+    //registrierung
+    var registerButton = document.getElementById('button-registrierung-aktiv');
+    var errorMessage = document.getElementById('error-message');
+    
+    registerButton.addEventListener('click', function() {
+        var inputs = document.querySelectorAll('.login-formular input');
+        var isValid = true;
+    
+        inputs.forEach(function(input) {
+            if (input.value.trim() === '') {
+                isValid = false;
+            }
+        });
+    
+        if (isValid) {
+            // All fields are filled, perform registration logic here
+            errorMessage.textContent = ''; // Clear any previous error message
+            window.location.href = 'details.html';
+        } else {
+            errorMessage.textContent = 'Please fill in all fields.';
+        }
+    });
+    
+
 
     // Button Training
     var button = document.getElementById('button-login');
@@ -55,7 +79,6 @@ levelUebersichtElements.forEach(function(element) {
             button.style.backgroundColor = ''; // Reset background color to default
         }
     });
-    
 
 
     // Select all elements with the class 'card-v2'
