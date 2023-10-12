@@ -144,31 +144,9 @@ h2 {
     color: white;
 }
 
-.login-box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-  height: 650px;
-}
 
-.login-formular {
-  width: 30%;
-  margin-bottom: 4rem;
-}
 
-/*
-.login-box img,
-.login-box button,
-.login-box p {
-}
-*/
 
-#logo-home {
-    width: 15%;
-    margin-bottom: 2em;
-}
 
 a:link {
     color: black;
@@ -181,11 +159,6 @@ a:visited {
   }
 
   #button-login-start {
-    /* position: relative; 
-     top: 50%;
-     left: 50%; 
-     transform: translate(-50%, -50%);
-     display: inline-block; */
      width: 13%;
      background-color: #ffffff;
      border: none;
@@ -205,11 +178,6 @@ a:visited {
  }
 
 #button-login {
-   /* position: relative; 
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    display: inline-block; */
     width: 13%;
     background-color: #ffffff;
     border: none;
@@ -228,67 +196,6 @@ a:visited {
     background-color: #E7EF75; 
 }
 
-#button-registrierung {
-   width: 13%;
-   background-color: #323432;
-   border: none;
-   border-radius: 20px; 
-   padding: 10px 20px; 
-   color: white; 
-   text-align: center;
-   text-decoration: none;
-   font-size: 1em; 
-   cursor: pointer;
-   transition: background-color 0.3s ease; /* Smooth transition for background color change */
-}
-
-#button-registrierung:hover {
-   background-color: #E7EF75; 
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Center the content horizontally */
-}
-
-#button-registrierung-aktiv {
-  width: 13%;
-  background-color: #E7EF75;
-  border: none;
-  border-radius: 20px; 
-  padding: 10px 20px; 
-  color: white; 
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em; 
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.error-message {
-  color: red;
-  margin-top: 10px; /* Add space between button and error message */
-  color: #ff0000; /* Red color for error message */
-  font-size: 0.9em; /* Adjust the font size */
-  margin-top: 10px; /* Add space between button and error message */
-  text-align: center; /* Center the text */
-  background-color: #ffe0e0; /* Light red background color */
-  padding: 8px 12px; /* Add padding for the error message */
-  border-radius: 10px; /* Rounded corners */
-  border: 1px solid #ff0000; /* Red border */
-  max-width: 300px; /* Set maximum width for the error message */
-} 
-
-
-
-
-#button-registrierung-aktiv:hover {
-  background-color: #E7EF75; 
-  color: black;
-}
-
 
 #motivation {
     color: white;
@@ -299,7 +206,7 @@ a:visited {
 }
 
 #registrierungs-frage:hover {
-  color: #E7EF75;
+  color: white;
 }
 
 form {   
@@ -321,52 +228,6 @@ input[type=text], input[type=password] {
 }
 
 
-#level-uebersicht-text {
-  height: auto;
-  width: 55em;
-  margin-left: 33%;
-  margin-bottom: 2em;
-  padding: 30px;
-  color: white;
-}
-
-.level-uebersicht-titel {
-  color: black;
-  margin-bottom: 0.5em;
-}
-
-#level-uebersicht-box-1, #level-uebersicht-box-2, #level-uebersicht-box-3, #level-uebersicht-box-4 { 
-    height: auto;
-    width: 65%;
-    margin-bottom: 2rem;
-    padding: 30px;
-    background-color: white;
-    border-radius: 20px 0 0 20px;
-    margin-left: auto;
-    margin-right: 0;
-    cursor: pointer;
-}
-
-#level-uebersicht-box-1:hover, #level-uebersicht-box-2:hover, #level-uebersicht-box-3:hover, #level-uebersicht-box-4:hover { 
-    background-color: #E7EF75;
-}
-
-#button-registrierung-aktiv {
-  margin-left: 35%;
-  margin-top: 4em;
-  margin-bottom: 10em;
-  background-color: #323432;
-}
-
-#button-registrierung-aktiv:hover {
-  background-color: #E7EF75;
-}
-
-
-
-
-
-
 /*
 
 .balken {
@@ -375,7 +236,6 @@ input[type=text], input[type=password] {
   flex-direction: column;
   width: 100%; /* Ensure the .balken div takes the full width of its parent */ /*
   gap: 1rem; /* Adjust the margin-bottom value as needed */
-
 
 /*
 
@@ -428,7 +288,6 @@ input[type=text], input[type=password] {
   align-items: center;
   margin-bottom: 1em; /* Adjust the margin-bottom value to control the space between balken-5 and details-header */
 }
-
 
 #details-titel {
   color: black;
@@ -590,12 +449,11 @@ input[type=text], input[type=password] {
 #level-uebersicht {
   background-color: #E7EF75;
   width: 35vw;
-  height: 40vh;
+  height: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  margin: auto;
   border-radius: 15px;
 }
 
@@ -605,7 +463,6 @@ input[type=text], input[type=password] {
   font-weight: 900;
   margin: 0; /* Remove default margin for <p> element */
   display: flex;
-  margin-bottom: 1rem;
   align-items: flex-start; /* Align items to the top */
 }
 
@@ -652,7 +509,7 @@ input[type=text], input[type=password] {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 
 }
 
@@ -715,7 +572,7 @@ input[type=text], input[type=password] {
   align-items: center;
   justify-content: center;
   height: 200px;
-  width: 100vw;
+  width: 100%;
 }
 
 .outer-bar {
@@ -784,6 +641,106 @@ input[type=text], input[type=password] {
   color: black;
 }
 
+  /* ------------------------registrierung.html---------------------------------------- */
+
+  .login-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    height: 50rem;  
+  }
+  
+  .login-formular {
+    width: 30%;
+    margin-bottom: 4rem;
+  }
+
+  #logo-home {
+    width: 15%;
+    margin-bottom: 2rem;
+}
+
+.level-uebersicht {
+  background-color: rgb(0, 191, 255);
+}
+
+  #level-uebersicht-text-v3 {
+    width: 100%;
+    height: 15vh;
+    background-color: orange;
+    margin-left: 35%;
+  }
+
+  .level-uebersicht-titel {
+    color: black;
+    margin-bottom: 0.5em;
+  }
+  
+  #level-uebersicht-box-1, #level-uebersicht-box-2, #level-uebersicht-box-3, #level-uebersicht-box-4 { 
+      height: auto;
+      width: 65%;
+      margin-bottom: 2rem;
+      padding: 30px;
+      background-color: white;
+      border-radius: 20px 0 0 20px;
+      margin-left: auto;
+      margin-right: 0;
+      cursor: pointer;
+  }
+
+#level-uebersicht-box-4 { 
+    height: auto;
+    width: 65%; 
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
+  
+  #level-uebersicht-box-1:hover, #level-uebersicht-box-2:hover, #level-uebersicht-box-3:hover, #level-uebersicht-box-4:hover { 
+      background-color: #E7EF75;
+  }
+  
+  .button-registrierung-div {
+    background-color: red;
+    height: 30vh;
+    margin-left: 35%;
+  }
+  
+
+#button-registrierung {
+ width: 18%;
+ background-color: #E7EF75;
+ border: none;
+ border-radius: 20px; 
+ padding: 10px 20px; 
+ color: black; 
+ text-align: center;
+ text-decoration: none;
+ font-size: 1em; 
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.error-message {
+ color: red;
+ margin-top: 10px; /* Add space between button and error message */
+ color: #ff0000; /* Red color for error message */
+ font-size: 0.9em; /* Adjust the font size */
+ margin-top: 10px; /* Add space between button and error message */
+ text-align: center; /* Center the text */
+ background-color: #ffe0e0; /* Light red background color */
+ padding: 8px 12px; /* Add padding for the error message */
+ border-radius: 10px; /* Rounded corners */
+ border: 1px solid #ff0000; /* Red border */
+ max-width: 300px; /* Set maximum width for the error message */
+} 
+
+
   /* ------------------------level-bearbeiten.html---------------------------------------- */
 
   #level-uebersicht-text-v2 {
@@ -800,7 +757,7 @@ input[type=text], input[type=password] {
     margin: 0 auto;
     display: grid;
     grid-gap: 3rem;
-    margin: 0 15% 10%  15%;
+    margin: 0 15% 5% 15%;
   }
   
   .card-v2 {
@@ -811,6 +768,13 @@ input[type=text], input[type=password] {
     padding: 30px;
   }
   
+#button-speichern-div { 
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
 
   
   #button-speichern {
@@ -826,7 +790,6 @@ input[type=text], input[type=password] {
       cursor: pointer;
       transition: background-color 0.3s ease; /* Smooth transition for background color change */
       margin-left: 15%;
-      margin-bottom: 10rem;
   }
   
   #button-speichern:hover {
@@ -842,8 +805,6 @@ input[type=text], input[type=password] {
   
   
   }
-
-
 
 
   /* ------------------------training-start.html---------------------------------------- */
@@ -899,16 +860,14 @@ footer {
 }
 
 
-
-
-
-
-
-
   /* ------------------------kontakt.html---------------------------------------- */
 
   #runup-mail, #runup-telefonnummer {
     color: white;
+  }
+
+  #runup-mail:hover, #runup-telefonnummer:hover {
+    color: #E7EF75;
   }
 
 #iframe-maps {
@@ -920,9 +879,6 @@ footer {
   width: 100%;
   height: 100%;
 }
-
-
-
 
   /* ------------------------make it responsive please---------------------------------------- */
 
@@ -937,7 +893,7 @@ footer {
     }
   
     #button-registrierung {
-      width: 17%;
+      width: 22%;
     }
   
     #logo-home {
@@ -952,18 +908,12 @@ footer {
       margin-top: 10%;
     }
 
-    /* #level-uebersicht-text-v2 {
-      height: ;
-    } */
-
     #button-speichern {
       width: 20%;
     }
 
   }
   
-
-
 
 @media(max-width: 1000px) {       /*   574px */
   #button-login {
@@ -975,7 +925,7 @@ footer {
 }
 
   #button-registrierung {
-    width: 28%;
+    width: 40%;
   }
 
 #logo-home {
