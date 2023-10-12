@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level bearbeiten</title>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.29.0/dist/umd/supabase.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<style>
+
+.cards-v2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 3rem;
+  margin: 0 15% 10% 15%;
+}
+
+.card-v2 {
+  background-color: #E7EF75;
+  padding: 1rem;
+  height: auto;
+  border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
+  padding: 30px;
+}
+
+#level-uebersicht-text-v2 {
+    margin: 5% 0 5% 15%;
+    color: white;
+}
+
+#button-registrierung-aktiv-v2 {
+    margin-left: 35%;
+    margin-top: 4em;
+    margin-bottom: 10em;
+    background-color: #262726;
+}
+
+
+
+#button-speichern {
+    width: 13%;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px; /* You can adjust the border-radius value to change the roundness of the corners */
+    padding: 10px 20px; /* Adjust padding as needed */
+    color: black; /* Text color */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem; /* Adjust font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    margin-bottom: 1rem;
+}
+
+#button-login:hover {
+    background-color: #E7EF75; /* Change the background color on hover */
+}
+
+
+/* If screen is larger than 600px, do it in 2 column */
+@media (min-width: 600px) {
+  .cards-v2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div id="logo-header-div">
+            <a href="details.html"><img src="img/logo.png" id="logo-header" alt="Logo"></a>
+        </div>
+        <div id="profilbild-und-einstellungen-div">
+            <a href="profil.html"><img src="img/profil.png" id="profilbild-header" alt="Profil"></a>
+            <a href="einstellungen.html"><img src="img/einstellungen.png" id="einstellungen-header" alt="Einstellungen"></a>
+        </div>
+    </header> 
+
+    <div id="level-uebersicht-text-v2">
+        <h2>Mein Level</h2>    
+        <p id="waehle-niveau-v2">Wähle hier dein Fitness-Niveau aus.</p>
+    </div>
+
+    <div class="cards-v2">
+      <div class="card-v2"><h2 class="level-uebersicht-titel">Beginner</h2><p>Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten. Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten.</p></div>
+      <div class="card-v2"><h2 class="level-uebersicht-titel">Fortgeschritten</h2><p>Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten. Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten.</p></div>
+      <div class="card-v2"><h2 class="level-uebersicht-titel">Erfahrene</h2><p>Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten. Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten.</p></div>
+      <div class="card-v2"><h2 class="level-uebersicht-titel">Leistungssport</h2><p>Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten. Beschreibung des aktuellen Niveaus aufgrund der wöchentlich zu absolvierenden Sporteinheiten.</p></div>
+    </div>
+    
+    
+    <button type="button" id="button-login"><a href="details.html" formtarget="_blank">speichern</a></button>
+
+
+<footer>
+    <div id="footer-div">
+    <a href="https:/www.twitter.com" target="_blank"><img src="img/icons8-twitter.svg" id="twitter" alt="X"></a>
+    <a href="https:/www.facebook.com" target="_blank"><img src="img/icons8-facebook.svg" id="facebook" alt="Facebook"></a>
+    <a href="https:/www.instagram.com" target="_blank"><img src="img/icons8-instagram.svg" id="instagram" alt="Instagram"></a>
+    </div>
+</footer>
+
+    <script type="module" src="supabase.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
