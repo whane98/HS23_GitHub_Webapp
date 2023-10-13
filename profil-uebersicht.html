@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persönliches Profil</title>
+    <title>Profil Übersicht</title>
     <script src="https://unpkg.com/@supabase/supabase-js@2"> </script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.29.0/dist/umd/supabase.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -25,33 +25,28 @@
         </div>
     </header>
 
-    <div id="profil-header">
-        <h1 id="profil-titel">Hallo (Name)!</h1>
+<div class="profil-div">
+    <div>
+        <h1 id="profil-titel">Willkommen zurück, Gazelle</h1>
     </div>
-
-<div id="profil-foto">
-    <img id="profilbild" src="img/profilfoto.png" alt="Profilfoto" />
-</div>
 
 <div id="level-uebersicht-pers">
-   <div id="level-box-pers">
-    <div id="test">
-    <p id="profil-level-pers">Punkte</p>
+    <div id="level-box-pers">
+        <p id="dein-fortschritt">Du befindest dich aktuell im Level <span id="dein-fortschritt-aktuell"></span></p>
+        <div class="fortschrittsbalken-div">
+            <div class="outer-bar"><div class="inner-bar"></div></div>
+        </div>
+        <p id="dein-fortschritt">Dein aktueller Punktestand beträgt <span id="dein-aktueller-punktestand"></span> von <span id="punktezahl-bis"></span>Punkten, die du in diesem Level sammeln kannst. Gazelle, bleib dran!</p>
+        
     </div>
-    <div class="container">
-        <div class="outer-bar">
-            <div class="inner-bar"></div>
-        </div>
-        <div class="text">450/1000</div>
-    </div>    
-        </div>
-    </div>    
-</div> 
-</div>
+ </div>
 
-<div id="profil-buttons-pers">
-<button id="button-profil-bearbeiten" type="button" formtarget="_blank">Profil bearbeiten</button>
-<button id="button-kontakt" type="button">Kontakt</button>
+    
+
+    <div id="profil-buttons">
+    <button id="button-level-bearbeiten" type="button" formtarget="_blank"><a href="level-bearbeiten.html">Level ändern</a></button>
+    <button id="button-profil-bearbeiten" type="button"><a href="profil-uebersicht.html">Profil bearbeiten</a></button>
+    </div>
 </div>
 
     <footer>
@@ -68,3 +63,4 @@
 </body>
 
 </html>
+
