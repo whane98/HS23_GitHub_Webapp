@@ -48,6 +48,8 @@
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    width: 100%;
+    background-color: rgb(31, 29, 29);
   }
   
   /* 6. A elements that don't have a class get default styles */
@@ -89,10 +91,16 @@
 
   /* ------------------------general---------------------------------------- */
 
-  body {
-    width: 100%;
-    background-color: rgb(31, 29, 29);
-   /* overflow-y: hidden; */
+h1 {
+  color: white;
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 2rem;
+  word-wrap: break-word;
+}
+
+h1:hover {
+  color: #E7EF75;
 }
 
   /* ------------------------header---------------------------------------- */
@@ -417,116 +425,42 @@ input[type=text], input[type=password] {
   margin-top: 4rem;
 }
 
-#profil-header {
-  height: 15em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0; /* Adjust the margin-bottom value to control the space between balken-5 and details-header */
+
+  /* ------------------------profil-bearbeiten.html---------------------------------------- */
+
+.profil-div {
+  margin: 10% 20% 6% 20%;
 }
 
 #profil-titel {
   color: white;
-  font-size: 5em;
-  margin: 0; /* Remove any default margins around h1 element */
+  margin-bottom: 2rem;
 }
 
-#profilbild {
-  width: 175px; 
-  height: 175px; 
-  border-radius: 60%;
-  overflow: hidden; /* Ensure the image stays within the circular shape */
-  margin-bottom: 3rem;
+#profil-titel:hover {
+  color: #E7EF75;
 }
 
-#profil-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem; 
+.login-box-v2 {
+  margin-left: 0.5%;
+  width: auto;
 }
 
-#level-uebersicht {
-  background-color: #E7EF75;
-  width: 35vw;
-  height: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 15px;
-}
-
-#level-box {
-  font-size: 3rem;
-  color: black;
-  font-weight: 900;
-  margin: 0; /* Remove default margin for <p> element */
-  display: flex;
-  align-items: flex-start; /* Align items to the top */
-}
-
-#profil-level {
-  margin: 0; /* Remove default margin for <p> element */
-  align-self: flex-start; /* Align the item to the top within the flex container */
-}
-
-#level-uebersicht-pers {
-  background-color: #E7EF75;
-  width: 45vw;
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-  border-radius: 15px;
-}
-
-#level-box-pers {
-  display: flex;
-  flex-direction: column;
-  font-size: 3rem;
-  color: black;
-  font-weight: 900;
-  margin: 0; /* Remove default margin for <p> element */
-  display: flex;
+.login-formular-v2 {
+  width: 50%;
   margin-bottom: 1rem;
-  align-items: flex-start; /* Align items to the top */
-  justify-content: center;
-}
-
-#profil-level-pers {
-  margin: 0; /* Remove default margin for <p> element */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* Align the item to the top within the flex container */
-}
-
-#test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-}
-
-.profil-angaben {
-  font-size: 1.5rem;
-  align-items: flex-end;
-  margin-bottom: 1rem ;
-  margin: 0; /* Remove default margin for <p> element */
 }
 
 #profil-buttons {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-left: 0.5%;  
 }
 
-#button-level-bearbeiten {
-  width: 13%;
+#button-level-bearbeiten, #button-profil-speichern {
+  width: 20%;
   background-color: #323432;
   border: none;
   border-radius: 20px; 
@@ -537,29 +471,11 @@ input[type=text], input[type=password] {
   font-size: 1em; 
   cursor: pointer;
   transition: background-color 0.3s ease; 
-  margin-top: 3rem;
-  margin-left: 36rem;
 }
   
 #button-level-bearbeiten:hover {
   background-color: #E7EF75; 
   color: black;
-}
-
-#button-profil-speichern {
-  width: 13%;
-  background-color: #323432;
-  border: none;
-  border-radius: 20px; 
-  padding: 10px 20px; 
-  color: white; 
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em; 
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for background color change */
-  margin-top: 3rem;
-  margin-left: 10.5rem;
 }
   
 #button-profil-speichern:hover {
@@ -619,6 +535,11 @@ input[type=text], input[type=password] {
   background-color: #E7EF75; 
   color: black;
 }
+
+
+
+  /* ------------------------kei ahnig wo here da ghört---------------------------------------- */
+
 
 #button-kontakt {
   width: 13%;
@@ -814,17 +735,6 @@ input[type=text], input[type=password] {
   margin: 10% 20% 6% 20%;
 }
 
-h1 {
-  color: white;
-  font-size: 80px;
-  line-height: 1;
-  margin-bottom: 2rem;
-}
-
-h1:hover {
-  color: #E7EF75;
-}
-
 #trainings-text {
   color: white;
   line-height: 1.8;
@@ -912,6 +822,14 @@ footer {
       width: 20%;
     }
 
+    .login-formular-v2 {
+      width: 80%;
+    }
+
+    #button-level-bearbeiten, #button-profil-speichern {
+      width: 30%;
+    }
+
   }
   
 
@@ -950,7 +868,13 @@ footer {
   width: 25%;
 }
 
+.login-formular-v2 {
+  width: 100%;
+}
 
+#button-level-bearbeiten, #button-profil-speichern {
+  width: 50%;
+}
 
 }
 
