@@ -643,6 +643,11 @@ input[type=text], input[type=password] {
  transition: background-color 0.3s ease;
 }
 
+#button-registrierung:hover {
+  background-color: #E7EF75; 
+  color: black;
+}
+
 .error-message {
  color: red;
  margin-top: 10px; /* Add space between button and error message */
