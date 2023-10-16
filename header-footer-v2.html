@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header-Footer</title>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.29.0/dist/umd/supabase.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <style>
+
+header {
+    height: 4rem;
+    background-color: #262726;
+    width: 100vw;
+    vertical-align: center;
+    text-align: center;
+}
+
+#logo-header-div {
+   /* background-color: red; */
+    height: 4rem;
+    width: 6rem;
+    float: left; /* Float to the left */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-header {
+    width: 80%;
+    float: right;
+    margin: 0;
+}
+
+#profilbild-und-einstellungen-div {
+    /* background-color: red; */
+    height: 4rem;
+    width: 6rem;
+    float: right; /* Float to the right */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profilbild-header, #einstellungen-header {
+    width: auto;
+    max-height: 50%;
+    float: left;
+    padding-right: 1.5rem;
+}
+
+footer {
+    height: 8rem;
+    background-color: #262726;
+    width: 100vw;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+#footer-div {
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+}
+
+#telegram, #informaticon, #twitter, #facebook, #instagram {
+    height: 2rem;
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <div id="logo-header-div">
+        <a href="details.html"><img src="img/logo.png" id="logo-header" alt="Logo"></a>
+    </div>
+    <div id="profilbild-und-einstellungen-div">
+        <a href="profil-uebersicht.html"><img src="img/profil.png" id="profilbild-header" alt="Profil"></a>
+        <a href="profil-bearbeiten.html"><img src="img/einstellungen.png" id="einstellungen-header" alt="Einstellungen"></a>
+    </div>
+</header>
+
+<br />
+
+<footer>
+    <div id="footer-div">
+    <a href="kontakt.html" target="_blank"><img src="img/Telegram_Icon.svg" id="telegram" alt="Kontakt"></a>
+    <a href="information.html" target="_blank"><img src="img/Information_Icon.svg" id="informaticon" alt="Informationen"></a>
+    <a href="https:/www.twitter.com" target="_blank"><img src="img/icons8-twitter.svg" id="twitter" alt="X"></a>
+    <a href="https:/www.facebook.com" target="_blank"><img src="img/icons8-facebook.svg" id="facebook" alt="Facebook"></a>
+    <a href="https:/www.instagram.com" target="_blank"><img src="img/icons8-instagram.svg" id="instagram" alt="Instagram"></a>
+    </div>
+</footer>
+
+    <script type="module" src="supabase.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
