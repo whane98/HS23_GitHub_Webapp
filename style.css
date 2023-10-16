@@ -698,7 +698,7 @@ input[type=text], input[type=password] {
   
   #button-speichern {
       width: 13%;
-      background-color: #323432;
+      background-color: white;
       border: none;
       border-radius: 20px; 
       padding: 10px 20px; 
