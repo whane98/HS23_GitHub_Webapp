@@ -1,6 +1,6 @@
 import { supa } from "/supabase.js";
 
-console.log("00 JavaScript verbunden cool")
+console.log("00 JavaScript verbunden nicht cool")
 // Function to handle scrolling to the target div
 function scrollToLevelUebersicht() {
     const targetDiv = document.querySelector('.level-uebersicht');
@@ -59,43 +59,25 @@ levelUebersichtElements.forEach(function(element) {
 
     // Select the button element
 
-    //registrierung
-    var registerButton = document.getElementById('button-registrierung-aktiv');
-    var errorMessage = document.getElementById('error-message');
+ async function signUp() {
+        const lastname = document.getElementById('lastname').value;
+        const firstname = document.getElementById('firstname').value;
+        const mail = document.getElementById('mail').value;
+        const psw = document.getElementById('psw').value; console.log(psw);
+        const pswAgain = document.getElementById('pswAgain').value;
+
+        const { error, user } = await supa.auth.signUp({ email:mail, password:psw });
     
-    registerButton.addEventListener('click', function() {
-        var inputs = document.querySelectorAll('.login-formular input');
-        var isValid = true;
-    
-        inputs.forEach(function(input) {
-            if (input.value.trim() === '') {
-                isValid = false;
-            }
-        });
-    
-        if (isValid) {
-            // All fields are filled, perform registration logic here
-            errorMessage.textContent = ''; // Clear any previous error message
-            window.location.href = 'details.html';
+        if (error) {
+            console.error("Error during sign up: ", error.message);
         } else {
-            errorMessage.textContent = 'Please fill in all fields.';
+            console.log("Signed up as ", user);
+            
         }
-    });
+    }
+
+document.getElementById("button-registrierung").addEventListener("click", signUp)
     
 
 
-    // Button Training
-    var button = document.getElementById('button-login');
-    var isTrainingStarted = false;
-    
-    button.addEventListener('click', function() {
-        isTrainingStarted = !isTrainingStarted;
-        if (isTrainingStarted) {
-            button.textContent = 'Training stoppen';
-            button.style.backgroundColor = 'red';
-        } else {
-            button.textContent = 'Training starten';
-            button.style.backgroundColor = ''; // Reset background color to default
-        }
-    });
 

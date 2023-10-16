@@ -743,6 +743,10 @@ input[type=text], input[type=password] {
     border-radius: 20px; 
     padding: 30px;
   }
+
+  .card-v2:hover {
+    cursor: pointer;
+  }
   
 #button-speichern-div { 
     width: 100%;

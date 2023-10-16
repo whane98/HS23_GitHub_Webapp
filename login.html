@@ -18,11 +18,11 @@
     <img src="img/logo.png" alt="RunUp Logo" id="logo-home">
 
     <div class="login-formular">
-        <label for="uname"><b></b></label>
-        <input type="text" placeholder="E-Mailadresse eingeben" name="uname" required>
+        <label for="mail"><b></b></label>
+        <input id="mail" type="text" placeholder="E-Mailadresse eingeben" name="uname" required>
     
         <label for="psw"><b></b></label>
-        <input type="password" placeholder="Passwort eingeben" name="psw" required>
+        <input id="psw" type="password" placeholder="Passwort eingeben" name="psw" required>
     <!--
         <button type="submit" id="button-login">Login</button>
         <label id="angemeldet-bleiben"><input type="checkbox" checked="checked" name="remember">Angemeldet bleiben</label>
@@ -32,7 +32,7 @@
     <!--
       <button type="button" id="button-login"><a href="login.html" formtarget="_blank">login</a></button>
     -->
-    <button type="button" id="button-login-start"><a href="details.html" formtarget="_blank">login</a></button>
+    <button type="button" id="button-login-start">login</a></button>
     <a href="registrierung.html"><p id="registrierungs-frage">Noch nicht registriert?</p></a>
      <!--  <p id="error-message" class="error-message">Fehler</p>  -->
 </div>
@@ -45,6 +45,7 @@
 
     <script type="module" src="supabase.js"></script>
     <script type="module" src="script.js"></script>
+    <script type="module" src="login.js"></script>
 
 </body>
 
