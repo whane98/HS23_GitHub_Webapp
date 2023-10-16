@@ -210,11 +210,11 @@ a:visited {
 }
 
 #registrierungs-frage {
-  color: #404140;
+  color: white;
 }
 
 #registrierungs-frage:hover {
-  color: white;
+  color: #E7EF75;
 }
 
 form {   
