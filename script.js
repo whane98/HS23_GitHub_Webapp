@@ -64,7 +64,6 @@ levelUebersichtElements.forEach(function(element) {
     });
     
 
-
     // Button Training
     var button = document.getElementById('button-login');
     var isTrainingStarted = false;
