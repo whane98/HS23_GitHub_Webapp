@@ -104,7 +104,7 @@ h1:hover {
 }
  /* ------------------------trainingseinheiten---------------------------------------- */
 
- [14:12, 16.10.2023] Manu: #details-header {
+#details-header {
   display: flex;
   justify-content: left;
   align-items: left;
@@ -280,20 +280,6 @@ h2.titel-trainingseinheit {
 
   
 }
-[14:14, 16.10.2023] Manu: <!DOCTYPE html>
-<html lang="de">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Details</title>
-  <script src="https://unpkg.com/@supabase/supabase-js@2"> </script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.29.0/dist/umd/supabase.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-
-  <!-- style
 
 #details-header {
   display: flex;
@@ -549,10 +535,6 @@ h2 {
     color: white;
 }
 
-
-
-
-
 a:link {
     color: black;
     text-decoration: none;
@@ -600,7 +582,6 @@ a:visited {
 #button-login:hover {
     background-color: #E7EF75; 
 }
-
 
 #motivation {
     color: white;
@@ -976,12 +957,29 @@ input[type=text], input[type=password] {
     margin-bottom: 2rem;
 }
 
+#button-weiterscrollen {
+  width: 13%;
+  background-color: white;
+  border: none;
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  color: black; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  }
+
+#button-weiterscrollen:hover {
+  background-color: #E7EF75; 
+}
+
 .level-uebersicht {
   background-color: rgb(0, 191, 255);
 }
 
   #level-uebersicht-text-v3 {
-    width: 100%;
     height: 15vh;
     background-color: orange;
     margin-left: 35%;
@@ -1025,10 +1023,9 @@ input[type=text], input[type=password] {
     margin-left: 35%;
   }
   
-
 #button-registrierung {
  width: 18%;
- background-color: white;
+ background-color: #E7EF75;
  border: none;
  border-radius: 20px; 
  padding: 10px 20px; 
@@ -1039,26 +1036,6 @@ input[type=text], input[type=password] {
  cursor: pointer;
  transition: background-color 0.3s ease;
 }
-
-#button-registrierung:hover {
-  background-color: #E7EF75; 
-  color: black;
-}
-
-.error-message {
- color: red;
- margin-top: 10px; /* Add space between button and error message */
- color: #ff0000; /* Red color for error message */
- font-size: 0.9em; /* Adjust the font size */
- margin-top: 10px; /* Add space between button and error message */
- text-align: center; /* Center the text */
- background-color: #ffe0e0; /* Light red background color */
- padding: 8px 12px; /* Add padding for the error message */
- border-radius: 10px; /* Rounded corners */
- border: 1px solid #ff0000; /* Red border */
- max-width: 300px; /* Set maximum width for the error message */
-} 
-
 
   /* ------------------------level-bearbeiten.html---------------------------------------- */
 
@@ -1230,6 +1207,11 @@ footer {
 
     #button-level-bearbeiten, #button-profil-bearbeiten {
       width: 30%;
+
+    }
+
+    #button-weiterscrollen {
+     width: 18%;
     }
 
   }
@@ -1282,6 +1264,8 @@ footer {
   width: 100%;
 }
 
+#button-weiterscrollen {
+  width: 24%;
+ }
+
 }
-
-
