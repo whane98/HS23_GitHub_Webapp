@@ -210,11 +210,11 @@ a:visited {
 }
 
 #registrierungs-frage {
-  color: #404140;
+  color: white;
 }
 
 #registrierungs-frage:hover {
-  color: white;
+  color: #E7EF75;
 }
 
 form {   
@@ -462,7 +462,7 @@ input[type=text], input[type=password] {
 #button-profil-speichern {
   width: 25%;
   height: 25%;
-  background-color: #323432;
+  background-color: white;
   border: none;
   border-radius: 20px; 
   padding: 10px 20px; 
@@ -473,12 +473,11 @@ input[type=text], input[type=password] {
   cursor: pointer;
   transition: background-color 0.3s ease; 
 }
-  
+
 #button-profil-speichern:hover {
   background-color: #E7EF75; 
   color: black;
 }
-
   /* ------------------------profil-uebersicht.html---------------------------------------- */
 
 #dein-fortschritt {
@@ -516,11 +515,11 @@ input[type=text], input[type=password] {
 #button-level-bearbeiten, #button-profil-bearbeiten {
   width: 25%;
   height: auto;
-  background-color: #323432;
+  background-color: white;
   border: none;
   border-radius: 20px; 
   padding: 10px 20px; 
-  color: white; 
+  color: white;
   text-align: center;
   text-decoration: none;
   font-size: 1em; 
@@ -529,12 +528,11 @@ input[type=text], input[type=password] {
   margin-top: 3rem;
 }
   
-#button-level-bearbeiten:hover, #button-profil-bearbeiten:hover {
-  background-color: #E7EF75; 
+#button-level-bearbeiten:hover, #button-profil-bearbeiten:hover { 
+  cursor: pointer;
   color: black;
+  background-color: #E7EF75;
 }
-
-
 
   /* ------------------------kei ahnig wo here da ghört---------------------------------------- */
 
@@ -633,7 +631,7 @@ input[type=text], input[type=password] {
 
 #button-registrierung {
  width: 18%;
- background-color: #E7EF75;
+ background-color: white;
  border: none;
  border-radius: 20px; 
  padding: 10px 20px; 
@@ -643,6 +641,11 @@ input[type=text], input[type=password] {
  font-size: 1em; 
  cursor: pointer;
  transition: background-color 0.3s ease;
+}
+
+#button-registrierung:hover {
+  background-color: #E7EF75; 
+  color: black;
 }
 
 .error-message {
@@ -698,7 +701,7 @@ input[type=text], input[type=password] {
   
   #button-speichern {
       width: 13%;
-      background-color: #323432;
+      background-color: white;
       border: none;
       border-radius: 20px; 
       padding: 10px 20px; 
