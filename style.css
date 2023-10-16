@@ -462,7 +462,7 @@ input[type=text], input[type=password] {
 #button-profil-speichern {
   width: 25%;
   height: 25%;
-  background-color: #323432;
+  background-color: white;
   border: none;
   border-radius: 20px; 
   padding: 10px 20px; 
