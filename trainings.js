@@ -2,16 +2,16 @@ import { supa } from "/supabase.js";
 
 console.log("00 JavaScript verbunden")
 
+let trainingStarted = false;
+const button = document.getElementById('button-login');
 
-// Button muss noch vom html implementiert werden //
-
-function toggleButton() {
-    const button = document.getElementById("button-training-starten");
-    if (button.innerHTML === "Training starten") {
-      button.innerHTML = "Training beenden";
-      button.style.backgroundColor = "red"; // Hintergrundfarbe auf Rot ändern
+button.addEventListener('click', function() {
+    if (!trainingStarted) {
+        button.textContent = 'Training stoppen';
+        button.style.backgroundColor = 'red';
     } else {
-      button.innerHTML = "Training starten";
-      button.style.backgroundColor = ""; // Hintergrundfarbe zurücksetzen (leer lassen oder auf Ihre Standardfarbe setzen)
+        // Hier können Sie den Link auf die andere Seite einfügen
+        window.location.href = '../profil-uebersicht.html';
     }
-  }
+    trainingStarted = !trainingStarted;
+});
