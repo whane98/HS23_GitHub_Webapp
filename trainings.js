@@ -11,7 +11,7 @@ button.addEventListener('click', function() {
         button.style.backgroundColor = 'red';
     } else {
         // Hier können Sie den Link auf die andere Seite einfügen
-        window.location.href = 'URL_DER_ANDEREN_SEITE.html';
+        window.location.href = '../profil-uebersicht.html';
     }
     trainingStarted = !trainingStarted;
 });
