@@ -91,8 +91,16 @@
 
   /* ------------------------general---------------------------------------- */
 
+  :root {
+    --primary-color: #E7EF75;
+    --secondary-color: #5e5f5e23;
+    --background-color: rgb(31, 29, 29);
+    --text-color: white;
+    --link-color: black;
+  }
+
 h1 {
-  color: white;
+  color: var(--text-color);
   font-size: 80px;
   line-height: 1;
   margin-bottom: 2rem;
@@ -100,7 +108,7 @@ h1 {
 }
 
 h1:hover {
-  color: #E7EF75;
+  color: var(--primary-color);
 }
  /* ------------------------trainingseinheiten---------------------------------------- */
 
@@ -114,7 +122,7 @@ h1:hover {
 }
 
 #details-titel {
-  color: white;
+  color: var(--text-color);
   font-size: 6rem;
   margin: 0;
 }
@@ -153,7 +161,7 @@ h1:hover {
 
 
 #details-titel:hover {
-color: #E7EF75;
+color: var(--primary-color);
 cursor: pointer;
 }
 
@@ -178,8 +186,8 @@ margin-bottom: 8rem;
 .card {
 width: 25vw;
 height: 30vh;
-background: linear-gradient(to bottom, #E7EF75 0%, #E7EF75 82%, #5e5f5e23 82%, #5e5f5e23 100%);
-color: white;
+background: linear-gradient(to bottom, --primary-color 0%, --primary-color 82%, --secondary-color 82%, --secondary-color 100%);
+color: var(--text-color);
 border-radius: 30px;
 margin: 2rem;
 display: flex;
@@ -216,7 +224,7 @@ bottom: 0;
 width: 100%; /* Set width to 100% to cover the entire bottom of the image container */
 text-align: center; /* Center the text horizontally */
 background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
-color: white;
+color: var(--text-color);
 font-size: 1em;
 }
 
@@ -291,7 +299,7 @@ h2.titel-trainingseinheit {
 }
 
 #details-titel {
-color: white;
+color: var(--text-color);
 font-size: 6rem;
 margin: 0; /* Remove any default margins around h1 element */
 }
@@ -306,7 +314,7 @@ margin: 0; /* Remove any default margins around h1 element */
 }
 
 #details-titel {
-  color: white;
+  color: var(--text-color);
   font-size: 6rem;
   margin: 0;
 }
@@ -345,7 +353,7 @@ margin: 0; /* Remove any default margins around h1 element */
 
 
 #details-titel:hover {
-color: #E7EF75;
+color: var(--primary-color);
 cursor: pointer;
 }
 
@@ -370,8 +378,8 @@ margin-bottom: 8rem;
 .card {
 width: 25vw;
 height: 30vh;
-background: linear-gradient(to bottom, #E7EF75 0%, #E7EF75 82%, #5e5f5e23 82%, #5e5f5e23 100%);
-color: white;
+background: linear-gradient(to bottom, --primary-color 0%, --primary-color 82%, --secondary-color 82%, --secondary-color 100%);
+color: var(--text-color);
 border-radius: 30px;
 margin: 2rem;
 display: flex;
@@ -408,7 +416,7 @@ bottom: 0;
 width: 100%; /* Set width to 100% to cover the entire bottom of the image container */
 text-align: center; /* Center the text horizontally */
 background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
-color: white;
+color: var(--text-color);
 font-size: 1em;
 }
 
@@ -532,26 +540,26 @@ header {
 
 
 h2 {
-    color: white;
+    color: var(--text-color);
 }
 
 a:link {
-    color: black;
+    color: var(--link-color);
     text-decoration: none;
   }
   
 a:visited {
-    color: black;
+    color: var(--link-color);
     text-decoration: none;
   }
 
   #button-login-start {
      width: 13%;
-     background-color: #ffffff;
+     background-color: var(--text-color);
      border: none;
      border-radius: 20px; 
      padding: 10px 20px; 
-     color: black; 
+     color: var(--link-color); 
      text-align: center;
      text-decoration: none;
      font-size: 1rem; 
@@ -561,16 +569,16 @@ a:visited {
  }
  
  #button-login-start:hover {
-     background-color: #E7EF75; 
+     background-color: var(--primary-color); 
  }
 
 #button-login {
     width: 13%;
-    background-color: #ffffff;
+    background-color: var(--text-color);
     border: none;
     border-radius: 20px; 
     padding: 10px 20px; 
-    color: black; 
+    color: var(--link-color); 
     text-align: center;
     text-decoration: none;
     font-size: 1rem; 
@@ -580,19 +588,19 @@ a:visited {
 }
 
 #button-login:hover {
-    background-color: #E7EF75; 
+    background-color: var(--primary-color); 
 }
 
 #motivation {
-    color: white;
+    color: var(--text-color);
 }
 
 #registrierungs-frage {
-  color: white;
+  color: var(--text-color);
 }
 
 #registrierungs-frage:hover {
-  color: #E7EF75;
+  color: var(--primary-color);
 }
 
 form {   
@@ -606,11 +614,11 @@ input[type=text], input[type=password] {
   display: inline-block;   
   border-bottom: 1px solid white;   
   box-sizing: border-box;   
-  color: white;
+  color: var(--text-color);
 } 
 
 #angemeldet-bleiben {
-  color: white;
+  color: var(--text-color);
 }
 
 
@@ -667,7 +675,7 @@ input[type=text], input[type=password] {
 */
 
 #details-header {
-  background-color: #E7EF75;
+  background-color: var(--primary-color);
   height: 15em;
   display: flex;
   justify-content: center;
@@ -676,7 +684,7 @@ input[type=text], input[type=password] {
 }
 
 #details-titel {
-  color: black;
+  color: var(--link-color);
   font-size: 5em;
   margin: 0; /* Remove any default margins around h1 element */
 }
@@ -702,8 +710,8 @@ input[type=text], input[type=password] {
 .card {
   width: 20vw;
   height: 30vh;
-  background: linear-gradient(to bottom, #E7EF75 0%, #E7EF75 82%, #5e5f5e23 82%, #5e5f5e23 100%);
-  color: white;
+  background: linear-gradient(to bottom, --primary-color 0%, --primary-color 82%, --secondary-color 82%, --secondary-color 100%);
+  color: var(--text-color);
   border-radius: 20px;
   margin: 5rem;
   display: flex;
@@ -731,7 +739,7 @@ input[type=text], input[type=password] {
   width: 100%; /* Set width to 100% to cover the entire bottom of the image container */
   text-align: center; /* Center the text horizontally */
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
-  color: white;
+  color: var(--text-color);
   font-size: 1em;
 }
 
@@ -811,12 +819,12 @@ input[type=text], input[type=password] {
 }
 
 #profil-titel {
-  color: white;
+  color: var(--text-color);
   margin-bottom: 2rem;
 }
 
 #profil-titel:hover {
-  color: #E7EF75;
+  color: var(--primary-color);
 }
 
 .login-box-v2 {
@@ -840,11 +848,11 @@ input[type=text], input[type=password] {
 #button-profil-speichern {
   width: 25%;
   height: 25%;
-  background-color: white;
+  background-color: var(--text-color);
   border: none;
   border-radius: 20px; 
   padding: 10px 20px; 
-  color: white; 
+  color: var(--text-color); 
   text-align: center;
   text-decoration: none;
   font-size: 1em; 
@@ -853,13 +861,13 @@ input[type=text], input[type=password] {
 }
 
 #button-profil-speichern:hover {
-  background-color: #E7EF75; 
-  color: black;
+  background-color: var(--primary-color); 
+  color: var(--link-color);
 }
   /* ------------------------profil-uebersicht.html---------------------------------------- */
 
 #dein-fortschritt {
-  color: white;
+  color: var(--text-color);
 }
 
 .fortschrittsbalken-div {
@@ -880,7 +888,7 @@ input[type=text], input[type=password] {
 .inner-bar {
   height: 100%;
   width: 50%;
-  background: linear-gradient(45deg, orange, #E7EF75);
+  background: linear-gradient(45deg, orange, --primary-color );
   border-radius: 25px 0 0 25px;
 }
 
@@ -893,11 +901,11 @@ input[type=text], input[type=password] {
 #button-level-bearbeiten, #button-profil-bearbeiten {
   width: 25%;
   height: auto;
-  background-color: white;
+  background-color: var(--text-color);
   border: none;
   border-radius: 20px; 
   padding: 10px 20px; 
-  color: white;
+  color: var(--text-color);
   text-align: center;
   text-decoration: none;
   font-size: 1em; 
@@ -908,8 +916,8 @@ input[type=text], input[type=password] {
   
 #button-level-bearbeiten:hover, #button-profil-bearbeiten:hover { 
   cursor: pointer;
-  color: black;
-  background-color: #E7EF75;
+  color: var(--link-color);
+  background-color: var(--primary-color);
 }
 
   /* ------------------------kei ahnig wo here da ghört---------------------------------------- */
@@ -921,7 +929,7 @@ input[type=text], input[type=password] {
   border: none;
   border-radius: 20px; 
   padding: 10px 20px; 
-  color: white; 
+  color: var(--text-color); 
   text-align: center;
   text-decoration: none;
   font-size: 1em; 
@@ -932,8 +940,8 @@ input[type=text], input[type=password] {
 }
   
 #button-kontakt:hover {
-  background-color: #E7EF75; 
-  color: black;
+  background-color: var(--primary-color); 
+  color: var(--link-color);
 }
 
   /* ------------------------registrierung.html---------------------------------------- */
@@ -959,11 +967,11 @@ input[type=text], input[type=password] {
 
 #button-weiterscrollen {
   width: 13%;
-  background-color: white;
+  background-color: var(--text-color);
   border: none;
   border-radius: 20px; 
   padding: 10px 20px; 
-  color: black; 
+  color: var(--link-color); 
   text-align: center;
   text-decoration: none;
   font-size: 1rem; 
@@ -972,7 +980,7 @@ input[type=text], input[type=password] {
   }
 
 #button-weiterscrollen:hover {
-  background-color: #E7EF75; 
+  background-color: var(--primary-color); 
 }
 
 .level-uebersicht {
@@ -995,7 +1003,7 @@ input[type=text], input[type=password] {
       width: 65%;
       margin-bottom: 2rem;
       padding: 30px;
-      background-color: white;
+      background-color: var(--text-color);
       border-radius: 20px 0 0 20px;
       margin-left: auto;
       margin-right: 0;
@@ -1006,7 +1014,7 @@ input[type=text], input[type=password] {
     height: auto;
     width: 65%; 
     padding: 30px;
-    background-color: white;
+    background-color: var(--text-color);
     border-radius: 20px 0 0 20px;
     margin-left: auto;
     margin-right: 0;
@@ -1014,7 +1022,7 @@ input[type=text], input[type=password] {
 }
   
   #level-uebersicht-box-1:hover, #level-uebersicht-box-2:hover, #level-uebersicht-box-3:hover, #level-uebersicht-box-4:hover { 
-      background-color: #E7EF75;
+      background-color: var(--primary-color);
   }
   
   .button-registrierung-div {
@@ -1025,11 +1033,11 @@ input[type=text], input[type=password] {
   
 #button-registrierung {
  width: 18%;
- background-color: #E7EF75;
+ background-color: var(--primary-color);
  border: none;
  border-radius: 20px; 
  padding: 10px 20px; 
- color: black; 
+ color: var(--link-color); 
  text-align: center;
  text-decoration: none;
  font-size: 1em; 
@@ -1045,7 +1053,7 @@ input[type=text], input[type=password] {
     flex-direction: column;
     justify-content: center;
     margin-left: 15%;
-    color: white;
+    color: var(--text-color);
 } 
 
   .cards-v2 {
@@ -1057,7 +1065,7 @@ input[type=text], input[type=password] {
   }
   
   .card-v2 {
-    background-color: white;
+    background-color: var(--text-color);
     padding: 1rem;
     height: auto;
     border-radius: 20px; 
@@ -1075,11 +1083,11 @@ input[type=text], input[type=password] {
   
   #button-speichern {
       width: 13%;
-      background-color: white;
+      background-color: var(--text-color);
       border: none;
       border-radius: 20px; 
       padding: 10px 20px; 
-      color: black; 
+      color: var(--link-color); 
       text-align: center;
       text-decoration: none;
       font-size: 1rem; 
@@ -1089,7 +1097,7 @@ input[type=text], input[type=password] {
   }
   
   #button-speichern:hover {
-      background-color: #E7EF75; 
+      background-color: var(--primary-color); 
   }
   
   
@@ -1111,7 +1119,7 @@ input[type=text], input[type=password] {
 }
 
 #trainings-text {
-  color: white;
+  color: var(--text-color);
   line-height: 1.8;
   word-wrap: break-word;
 }
@@ -1148,11 +1156,11 @@ footer {
   /* ------------------------kontakt.html---------------------------------------- */
 
   #runup-mail, #runup-telefonnummer {
-    color: white;
+    color: var(--text-color);
   }
 
   #runup-mail:hover, #runup-telefonnummer:hover {
-    color: #E7EF75;
+    color: var(--primary-color);
   }
 
 #iframe-maps {
