@@ -1,6 +1,25 @@
 import { supa } from "/supabase.js";
 
-console.log("00 JavaScript verbunden")
+console.log("00 JavaScript verbunden cool")
+// Function to handle scrolling to the target div
+function scrollToLevelUebersicht() {
+    const targetDiv = document.querySelector('.level-uebersicht');
+  
+    if (targetDiv) {
+      targetDiv.scrollIntoView({
+        behavior: 'smooth', // Add smooth scrolling animation
+        block: 'start',     // Scroll to the top of the target element
+      });
+    }
+  }
+  
+  // Add a click event listener to the button
+  document.getElementById('button-weiterscrollen').addEventListener('click', scrollToLevelUebersicht);
+  
+
+
+
+  /* now we go for the yellow level cards */
 
 
 // Select all elements with the class 'level-uebersicht'
@@ -64,6 +83,7 @@ levelUebersichtElements.forEach(function(element) {
     });
     
 
+
     // Button Training
     var button = document.getElementById('button-login');
     var isTrainingStarted = false;
@@ -78,6 +98,4 @@ levelUebersichtElements.forEach(function(element) {
             button.style.backgroundColor = ''; // Reset background color to default
         }
     });
-
-
 

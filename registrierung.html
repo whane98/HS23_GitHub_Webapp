@@ -11,19 +11,129 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
+<style>
+
+.login-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    height: 50rem;  
+  }
+  
+  .login-formular {
+    width: 30%;
+    margin-bottom: 4rem;
+  }
+
+  #logo-home {
+    width: 15%;
+    margin-bottom: 2rem;
+}
+
+#button-weiterscrollen {
+  width: 13%;
+  background-color: white;
+  border: none;
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  color: black; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  }
+
+#button-weiterscrollen:hover {
+  background-color: #E7EF75; 
+}
+
+.level-uebersicht {
+  background-color: rgb(0, 191, 255);
+}
+
+  #level-uebersicht-text-v3 {
+    height: 15vh;
+    background-color: orange;
+    margin-left: 35%;
+  }
+
+  .level-uebersicht-titel {
+    color: black;
+    margin-bottom: 0.5em;
+  }
+  
+  #level-uebersicht-box-1, #level-uebersicht-box-2, #level-uebersicht-box-3, #level-uebersicht-box-4 { 
+      height: auto;
+      width: 65%;
+      margin-bottom: 2rem;
+      padding: 30px;
+      background-color: white;
+      border-radius: 20px 0 0 20px;
+      margin-left: auto;
+      margin-right: 0;
+      cursor: pointer;
+  }
+
+#level-uebersicht-box-4 { 
+    height: auto;
+    width: 65%; 
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
+  
+  #level-uebersicht-box-1:hover, #level-uebersicht-box-2:hover, #level-uebersicht-box-3:hover, #level-uebersicht-box-4:hover { 
+      background-color: #E7EF75;
+  }
+  
+  .button-registrierung-div {
+    background-color: red;
+    height: 30vh;
+    margin-left: 35%;
+  }
+  
+
+#button-registrierung {
+ width: 18%;
+ background-color: #E7EF75;
+ border: none;
+ border-radius: 20px; 
+ padding: 10px 20px; 
+ color: black; 
+ text-align: center;
+ text-decoration: none;
+ font-size: 1em; 
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.error-message {
+ color: red;
+ margin-top: 10px; /* Add space between button and error message */
+ color: #ff0000; /* Red color for error message */
+ font-size: 0.9em; /* Adjust the font size */
+ margin-top: 10px; /* Add space between button and error message */
+ text-align: center; /* Center the text */
+ background-color: #ffe0e0; /* Light red background color */
+ padding: 8px 12px; /* Add padding for the error message */
+ border-radius: 10px; /* Rounded corners */
+ border: 1px solid #ff0000; /* Red border */
+ max-width: 300px; /* Set maximum width for the error message */
+} 
+
+</style>
+
+
 </head>
 
 <body>
 
-    <header>
-        <div id="logo-header-div">
-            <a href="details.html"><img src="img/logo.png" id="logo-header" alt="Logo"></a>
-        </div>
-        <div id="profilbild-und-einstellungen-div">
-            <a href="profil-uebersicht.html"><img src="img/profil.png" id="profilbild-header" alt="Profil"></a>
-            <a href="profil-bearbeiten.html"><img src="img/einstellungen.png" id="einstellungen-header" alt="Einstellungen"></a>
-        </div>
-    </header> 
 
 
 <div class="login-box">
@@ -46,58 +156,10 @@
         <input type="password" placeholder="Passwort wiederholen" name="psw" required />
 
     </div>
+
+    <button type="button" id="button-weiterscrollen">weiter</button>
+
 </div>
-
-<!--   <div class="login-formular">
-        <label for="lastname"><b></b></label>
-        <input type="text" placeholder="Name eingeben" name="lastname" required />
-    
-        <label for="firstname"><b></b></label>
-        <input type="text" placeholder="Vorname eingeben" name="firstname" required />
-
-        <label for="mail"><b></b></label>
-        <input type="text" placeholder="E-Mailadresse eingeben" name="mail" required />
-
-        <label for="psw"><b></b></label>
-        <input type="password" placeholder="Passwort eingeben" name="psw" required />
-
-        <label for="psw"><b></b></label>
-        <input type="password" placeholder="Passwort wiederholen" name="psw" required />
-
-    </div> -->
-
-    
-    <!-- <div class="login-formular">
-    <label for="lastname"><b>Lastname</b></label>
-    <input type="text" placeholder="Name eingeben" name="lastname" required />
-
-    <label for="firstname"><b>Firstname</b></label>
-    <input type="text" placeholder="Vorname eingeben" name="firstname" required />
-
-    <label for="mail"><b>Email</b></label>
-    <input type="email" placeholder="E-Mailadresse eingeben" name="mail" required />
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Passwort eingeben" name="psw" required />
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Passwort wiederholen" name="psw-repeat" required />
-</div>
-
-<button type="button" id="button-registrierung-aktiv">registrieren</button>
-<p id="error-message" style="color: red;"></p>
--->
-
-    <!--
-        <button type="submit" id="button-login">Login</button>
-
-        <label id="angemeldet-bleiben"><input type="checkbox" checked="checked" name="remember">Angemeldet bleiben</label>
-        -->
-
-     
-<!--
-      <button type="button" id="button-login"><a href="login.html" formtarget="_blank">login</a></button>
--->
 
 <div class="level-uebersicht">
     <div id="level-uebersicht-text-v3">
@@ -120,22 +182,14 @@
         </div>
     </div>
     <div class="button-registrierung-div">
-        <button type="button" id="button-registrierung"><a href="../details.html" formtarget="_blank">registrieren</a></button>
+        <button type="button" id="button-registrierung"><a href="details.html">registrieren</a></button>
         <!--  <p id="error-message" class="error-message"></p>  -->
     </div>
     
 </div>
 
-<footer>
-    <div id="footer-div">
-    <a href="https:/www.twitter.com" target="_blank"><img src="img/icons8-twitter.svg" id="twitter" alt="X"></a>
-    <a href="https:/www.facebook.com" target="_blank"><img src="img/icons8-facebook.svg" id="facebook" alt="Facebook"></a>
-    <a href="https:/www.instagram.com" target="_blank"><img src="img/icons8-instagram.svg" id="instagram" alt="Instagram"></a>
-    </div>
-</footer>
-
     <script type="module" src="supabase.js"></script>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="registrierung.js"></script>
 
 </body>
 
