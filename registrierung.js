@@ -1,6 +1,58 @@
 import { supa } from "/supabase.js";
 
-console.log("00 JavaScript verbunden nicht cool")
+console.log("00 JavaScript verbunden, cool")
+
+// Now we go for the registration requirements ------------------------------------------------------------------------------------
+
+const pswInput = document.getElementById('psw');
+const pswAgainInput = document.getElementById('pswAgain');
+const mailInput = document.getElementById('mail');
+const weiterButton = document.getElementById('button-weiterscrollen');
+const errorMessage = document.getElementById('error-message');
+const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+function checkPasswordMatch() {
+    if (pswInput.value !== pswAgainInput.value) {
+        weiterButton.disabled = true;
+    } else {
+        weiterButton.disabled = false;
+    }
+}
+
+function checkEmailFormat() {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailPattern.test(mailInput.value)) {
+        errorMessage.textContent = "Invalid email format.";
+        weiterButton.disabled = true;
+    } else {
+        errorMessage.textContent = "";
+        weiterButton.disabled = false;
+    }
+}
+
+function displayErrorMessage() {
+    if (pswInput.value !== pswAgainInput.value) {
+        alert("Passwords must match");
+    }
+}
+
+// Add input event listeners for password validation
+pswInput.addEventListener('input', checkPasswordMatch);
+pswAgainInput.addEventListener('input', checkPasswordMatch);
+
+// Add input event listener for email format validation
+mailInput.addEventListener('input', checkEmailFormat);
+
+// Add click event listener to "button-weiterscrollen" for displaying error message
+weiterButton.addEventListener('click', displayErrorMessage);
+
+
+console.log("test");
+
+
+// Now we go for weiterscrollen-button ------------------------------------------------------------------------------------
+
 // Function to handle scrolling to the target div
 function scrollToLevelUebersicht() {
     const targetDiv = document.querySelector('.level-uebersicht');
@@ -19,8 +71,7 @@ function scrollToLevelUebersicht() {
 
 
 
-  /* now we go for the yellow level cards */
-
+// Now we go for the yellow level cards ------------------------------------------------------------------------------------
 
 // Select all elements with the class 'level-uebersicht'
 var levelUebersichtElements = document.querySelectorAll('.level-uebersicht');
@@ -78,6 +129,5 @@ levelUebersichtElements.forEach(function(element) {
 
 document.getElementById("button-registrierung").addEventListener("click", signUp)
     
-
 
 
