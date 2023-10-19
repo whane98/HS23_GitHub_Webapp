@@ -110,7 +110,11 @@ h1 {
 h1:hover {
   color: var(--primary-color);
 }
- /* ------------------------trainingseinheiten---------------------------------------- */
+ /* ------------------------details.html---------------------------------------- */
+
+.trainingseinheit-section {
+  height: 100vh;
+}
 
 #details-header {
   display: flex;
@@ -654,22 +658,26 @@ input[type=text], input[type=password] {
 #button-weiterscrollen:hover {
   background-color: var(--primary-color); 
 }
-
+/*
 .level-uebersicht {
   background-color: rgb(0, 191, 255);
 }
-
+*/
   #level-uebersicht-text-v3 {
     height: 15vh;
-    background-color: orange;
+    /* background-color: orange; */
     margin-left: 35%;
   }
 
-  .level-uebersicht-titel {
+#waehle-niveau {
+  color: white;
+}
+
+.level-uebersicht-titel {
     color: black;
     margin-bottom: 0.5em;
   }
-  
+
   #level-uebersicht-box-1, #level-uebersicht-box-2, #level-uebersicht-box-3, #level-uebersicht-box-4 { 
       height: auto;
       width: 65%;
@@ -698,7 +706,7 @@ input[type=text], input[type=password] {
   }
   
   .button-registrierung-div {
-    background-color: red;
+   /* background-color: red; */
     height: 30vh;
     margin-left: 35%;
   }

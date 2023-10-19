@@ -2,54 +2,6 @@ import { supa } from "/supabase.js";
 
 console.log("00 JavaScript verbunden, cool")
 
-// Now we go for the registration requirements ------------------------------------------------------------------------------------
-
-const pswInput = document.getElementById('psw');
-const pswAgainInput = document.getElementById('pswAgain');
-const mailInput = document.getElementById('mail');
-const weiterButton = document.getElementById('button-weiterscrollen');
-const errorMessage = document.getElementById('error-message');
-const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-function checkPasswordMatch() {
-    if (pswInput.value !== pswAgainInput.value) {
-        weiterButton.disabled = true;
-    } else {
-        weiterButton.disabled = false;
-    }
-}
-
-function checkEmailFormat() {
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-    if (!emailPattern.test(mailInput.value)) {
-        errorMessage.textContent = "Invalid email format.";
-        weiterButton.disabled = true;
-    } else {
-        errorMessage.textContent = "";
-        weiterButton.disabled = false;
-    }
-}
-
-function displayErrorMessage() {
-    if (pswInput.value !== pswAgainInput.value) {
-        alert("Passwords must match");
-    }
-}
-
-// Add input event listeners for password validation
-pswInput.addEventListener('input', checkPasswordMatch);
-pswAgainInput.addEventListener('input', checkPasswordMatch);
-
-// Add input event listener for email format validation
-mailInput.addEventListener('input', checkEmailFormat);
-
-// Add click event listener to "button-weiterscrollen" for displaying error message
-weiterButton.addEventListener('click', displayErrorMessage);
-
-
-console.log("test");
-
 
 // Now we go for weiterscrollen-button ------------------------------------------------------------------------------------
 
@@ -68,6 +20,7 @@ function scrollToLevelUebersicht() {
   // Add a click event listener to the button
   document.getElementById('button-weiterscrollen').addEventListener('click', scrollToLevelUebersicht);
   
+
 
 
 
@@ -110,6 +63,14 @@ levelUebersichtElements.forEach(function(element) {
 
     // Select the button element
 
+
+    // Now we go for the form validation ------------------------------------------------------------------------------------
+
+/*
+version manu bis >>>>>>>>>>>>>>>>>>>>>
+
+
+
  async function signUp() {
         const lastname = document.getElementById('lastname').value;
         const firstname = document.getElementById('firstname').value;
@@ -119,13 +80,13 @@ levelUebersichtElements.forEach(function(element) {
 
         // Validate if all input fields are filled
     if (!lastname || !firstname || !mail || !psw || !pswAgain) {
-        console.error("All fields are required.");
+        alert.error("All fields are required.");
         return;
     }
 
     // Validate if passwords match
     if (psw !== pswAgain) {
-        console.error("Passwords do not match.");
+        alert.error("Passwords do not match.");
         return;
     }
 
@@ -144,14 +105,92 @@ levelUebersichtElements.forEach(function(element) {
         const { error, user } = await supa.auth.signUp({ email:mail, password:psw });
     
         if (error) {
-            console.error("Error during sign up: ", error.message);
+            alert.error("Error during sign up: ", error.message);
         } else {
-            console.log("Signed up as ", user);
+            alert.log("Signed up as ", user);
             
         }
     }
 
 document.getElementById("button-registrierung").addEventListener("click", signUp)
     
+version manu bis hier und schluss >>>>>>>>>>>>>>>>>>>>>
+*/
 
+async function signUp() {
+    const lastname = document.getElementById('lastname').value;
+    const firstname = document.getElementById('firstname').value;
+    const mail = document.getElementById('mail').value;
+    const psw = document.getElementById('psw').value;
+    const pswAgain = document.getElementById('pswAgain').value;
 
+    // Validate if all input fields are filled
+if (!lastname || !firstname || !mail || !psw || !pswAgain) {
+    alert("All fields are required.");
+    return;
+}
+
+// Validate if mail format is correct
+const mail1 = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+if (!mail1.test(mail)) {
+    alert("Please enter a valid email address like example@example.com");
+    return
+  }
+
+// Validate if password contains at least 6 characters
+if (psw.length <= 6) {
+    alert("The password must contain at least 6 characters");
+    return;
+}
+
+// Validate if passwords match
+if (psw !== pswAgain) {
+    alert("Passwords do not match.");
+    return;
+}
+
+// Validate if a level is selected
+const isAnyLevelSelected =
+    document.getElementById('level-uebersicht-box-1').style.backgroundColor === 'rgb(228, 239, 117)' ||
+    document.getElementById('level-uebersicht-box-2').style.backgroundColor === 'rgb(228, 239, 117)' ||
+    document.getElementById('level-uebersicht-box-3').style.backgroundColor === 'rgb(228, 239, 117)' ||
+    document.getElementById('level-uebersicht-box-4').style.backgroundColor === 'rgb(228, 239, 117)';
+
+if (!isAnyLevelSelected) {
+    alert("Please select a fitness level.");
+    return;
+}
+
+// Makes the login via Supabase smoother for the user
+    try {
+        const { error, user } = await supa.auth.signUp({ email: mail, password: psw });
+    
+        if (error) {
+          console.error("Error during sign up:", error.message);
+          alert("Error during sign up. Please check the console for details.");
+        } else {
+          alert("Signed up as " + user.email);
+        }
+      } catch (error) {
+        if (error.response && error.response.status === 429) {
+          const retryAfter = error.response.headers['Retry-After'] || 1; // Default to 1 second if no header is provided.
+          console.log(`Rate limited. Retrying after ${retryAfter} seconds.`);
+          setTimeout(signUp, retryAfter * 1000); // Retry after the specified time.
+        } else {
+          console.error("An unexpected error occurred:", error);
+          alert("An unexpected error occurred. Please check the console for details.");
+        }
+
+          // Redirect the user to "details.html" after clicking the button
+          window.location.href = "details.html";
+      }
+    }
+    
+    document.getElementById("button-registrierung").addEventListener("click", function() {
+        signUp(); // Call the signUp function
+              
+      
+        
+      });
+      
