@@ -117,6 +117,30 @@ levelUebersichtElements.forEach(function(element) {
         const psw = document.getElementById('psw').value; console.log(psw);
         const pswAgain = document.getElementById('pswAgain').value;
 
+        // Validate if all input fields are filled
+    if (!lastname || !firstname || !mail || !psw || !pswAgain) {
+        console.error("All fields are required.");
+        return;
+    }
+
+    // Validate if passwords match
+    if (psw !== pswAgain) {
+        console.error("Passwords do not match.");
+        return;
+    }
+
+    // Validate if a level is selected
+    const isAnyLevelSelected =
+        document.getElementById('level-uebersicht-box-1').style.backgroundColor === 'rgb(228, 239, 117)' ||
+        document.getElementById('level-uebersicht-box-2').style.backgroundColor === 'rgb(228, 239, 117)' ||
+        document.getElementById('level-uebersicht-box-3').style.backgroundColor === 'rgb(228, 239, 117)' ||
+        document.getElementById('level-uebersicht-box-4').style.backgroundColor === 'rgb(228, 239, 117)';
+
+    if (!isAnyLevelSelected) {
+        console.error("Please select a fitness level.");
+        return;
+    }
+
         const { error, user } = await supa.auth.signUp({ email:mail, password:psw });
     
         if (error) {
