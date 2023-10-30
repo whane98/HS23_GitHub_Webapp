@@ -20,3 +20,27 @@ function handleCardClick(event) {
 cardElements.forEach(function(card) {
     card.addEventListener('click', handleCardClick);
 });
+
+// Now we go for button-speichern ------------------------------------------------------------------------------------
+
+// Function to handle clicking the "button-speichern"
+function handleSpeichernClick() {
+    // Validate if a fitness level is selected
+    const isAnyLevelSelected =
+        document.getElementById('card-1').style.backgroundColor === 'rgb(228, 239, 117)' ||
+        document.getElementById('card-2').style.backgroundColor === 'rgb(228, 239, 117)' ||
+        document.getElementById('card-3').style.backgroundColor === 'rgb(228, 239, 117)' ||
+        document.getElementById('card-4').style.backgroundColor === 'rgb(228, 239, 117)';
+
+    if (!isAnyLevelSelected) {
+        window.alert("Please select a fitness level.");
+    } else {
+        // Enable the button and handle the redirection
+        window.location.href = "details.html";
+    }
+}
+
+// Add click event listener to the "button-speichern"
+document.getElementById('button-speichern').addEventListener('click', handleSpeichernClick);
+
+
