@@ -1,20 +1,22 @@
 import { supa } from "/supabase.js";
 
-console.log("00 JavaScript verbunden login nicht cool")
+console.log("00 JavaScript verbunden");
 
 async function signIn() {
     const mail = document.getElementById('mail').value;
-    const psw = document.getElementById('psw').value; console.log(psw);
+    const psw = document.getElementById('psw').value;
 
-    const { error, user } = await supa.auth.signIn({ email:mail, password:psw });
+    if (mail && psw) {
+        const { error, user } = await supa.auth.signIn({ email: mail, password: psw });
 
-    if (error) {
-        console.error("Error during sign in: ", error.message);
+        if (error) {
+            console.error("Error during sign in: ", error.message);
+        } else {
+            window.location.href = 'details.html';
+        }
     } else {
-        window.location.href = 'details.html';
-        
+        window.alert("Please fill out all fields before logging in.");
     }
 }
-
 
 document.getElementById("button-login-start").addEventListener("click", signIn);
