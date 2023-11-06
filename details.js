@@ -14,26 +14,22 @@ async function fetchTrainingData() {
             return;
         }
 
-        // Assuming your card-container has class of 'card-container'
-        const cardContainer = document.getElementsByClassName("card-container");
+        const cardContainer = document.querySelector(".cards-details-v2");
 
         // Iterate through the fetched data and create cards dynamically
         data.forEach(training => {
             const card = document.createElement("div");
-            card.classList.add("card");
-
-            const imageContainer = document.createElement("div");
-            imageContainer.classList.add("image-container");
+            card.classList.add("card-details-v2");
+            card.id = `card-details-v2-${training.id}`; // Set card ID based on the fetched data ID
 
             const link = document.createElement("a");
-            link.href = training.link; // Assuming your training data has a 'link' property
+            link.href = training.link;
             link.innerHTML = `
-                <img class="card-image" src="${training.image}" alt="${training.title}" />
-                <span>${training.title}</span>
+                <img class="card-image-v2" src="${training.image}" alt="${training.title}" />
+                <h2 class="level-uebersicht-titel-v2">${training.title}</h2>
             `;
 
-            imageContainer.appendChild(link);
-            card.appendChild(imageContainer);
+            card.appendChild(link);
             cardContainer.appendChild(card);
         });
     } catch (error) {
@@ -43,3 +39,15 @@ async function fetchTrainingData() {
 
 // Call the fetchTrainingData function to populate the cards
 fetchTrainingData();
+
+const { user, session, error } = supabase.auth.session();
+
+if (error) {
+    console.error("Error fetching session:", error.message);
+} else if (user) {
+    console.log("User is authenticated:", user);
+    // You can perform actions here that require an authenticated user
+} else {
+    console.log("User is not authenticated");
+    // You can handle the case where the user is not authenticated
+}

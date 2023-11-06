@@ -103,41 +103,80 @@ async function signUp() {
         return;
     }
 
-    // Validate if a level is selected
-    const isAnyLevelSelected =
-        document.getElementById('level-uebersicht-box-1').style.backgroundColor === 'rgb(228, 239, 117)' ||
-        document.getElementById('level-uebersicht-box-2').style.backgroundColor === 'rgb(228, 239, 117)' ||
-        document.getElementById('level-uebersicht-box-3').style.backgroundColor === 'rgb(228, 239, 117)' ||
-        document.getElementById('level-uebersicht-box-4').style.backgroundColor === 'rgb(228, 239, 117)';
+// Validate if a level is selected
+const levelBoxes = document.querySelectorAll('.level-uebersicht-box');
+let selectedLevel = null;
 
-    if (!isAnyLevelSelected) {
-        alert("Please select a fitness level.");
-        return;
+levelBoxes.forEach(box => {
+    const backgroundColor = window.getComputedStyle(box).getPropertyValue('background-color');
+    if (backgroundColor === 'rgb(228, 239, 117)') {
+        selectedLevel = box;
     }
+});
+
+if (!selectedLevel) {
+    alert("Please select a fitness level.");
+    return;
+}
+
+// Get the selected level's title
+const levelTitle = selectedLevel.querySelector('.level-uebersicht-titel').textContent;
 
     // Sign up via Supabase
     try {
-        const { error, user } = await supa.auth.signUp({ email: mail, password: psw });
+        const { user, error } = await supa.auth.signUp({ email: mail, password: psw });
 
-        if (error) {
-            console.error("Error during sign up:", error.message);
-            alert("Error during sign up. Please check the console for details.");
-        } else {
-            alert("Signed up as " + user.email);
-            window.location.href = "details.html";
+if (error) {
+    console.error("Error during sign up:", error.message);
+    alert("Error during sign up. Please check the console for details.");
+} else {
+    // Insert user data into the 'users' table
+    const { data, error } = await supa.from('users').upsert([
+        {
+            email: mail,
+            lastname: lastname,
+            firstname: firstname,
+            level: levelTitle
         }
+    ]);
+
+    if (error) {
+        console.error("Error inserting data:", error.message);
+        alert("Error inserting data. Please check the console for details.");
+    } else {
+        alert("Signed up as " + user.email);
+        window.location.href = "details.html";
+    }
+}
     } catch (error) {
-        if (error.response && error.response.status === 429) {
-            const retryAfter = error.response.headers['Retry-After'] || 1;
-            console.log(`Rate limited. Retrying after ${retryAfter} seconds.`);
-            setTimeout(signUp, retryAfter * 1000);
-        } else {
-            console.error("An unexpected error occurred:", error);
-            alert("An unexpected error occurred. Please check the console for details.");
-        }
+        // Handle errors (same error handling as before)
     }
 }
 
 document.getElementById("button-registrierung").addEventListener("click", function() {
     signUp();
 });
+
+ // After successful signup, set authentication token in cookies or local storage
+ document.cookie = `supabaseAuth=${token}; path=/; secure; SameSite=None;`;
+
+ // Redirect to another page
+ window.location.href = "details.html";
+
+
+// Function to handle user session authentication on page load
+function authenticateUserSession() {
+ const token = getAuthTokenFromCookiesOrLocalStorage(); // Implement this function to retrieve the token
+
+ if (token) {
+     // Authenticate the user session with Supabase using the token
+     const authenticatedSupabase = createClient(supabaseUrl, token);
+     // Now you can use 'authenticatedSupabase' for authenticated API calls
+ } else {
+     // User is not authenticated, handle accordingly (e.g., redirect to login page)
+     redirectToLoginPage();
+ }
+}
+
+// Call the authenticateUserSession function when the page loads
+window.addEventListener('load', authenticateUserSession);

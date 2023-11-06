@@ -41,20 +41,21 @@
             <label for="firstname"></label>
             <input type="text" placeholder="Vorname ändern" name="firstname" required />
     
-            <label for="mail"></label>
-            <input type="text" placeholder="E-Mailadresse ändern" name="mail" required />
+            <label for="new-email"></label>
+            <input type="text" placeholder="Neue E-Mailadresse" name="new-email" required />
 
             <label for="psw"></label>
-            <input type="password" placeholder="Passwort ändern" name="psw" required />
+            <input type="password" placeholder="Passwort ändern" name="new-password" required />
 
             <label for="psw"></label>
-            <input type="password" placeholder="Passwort wiederholen" name="psw" required />
+            <input type="password" placeholder="Passwort wiederholen" name="repeat-password" required />
         </div>
     </div>
     
 
     <div id="profil-buttons">
     <button id="button-profil-speichern" type="button"><a href="profil-uebersicht.html">Profil speichern</a></button>
+    <button id="button-email-aendern" type="button">E-Mail ändern</button>
     </div>
 </div>
 
@@ -69,7 +70,7 @@
 </footer>
 
     <script type="module" src="supabase.js"></script>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="profil-bearbeiten.js"></script>
 
 </body>
 

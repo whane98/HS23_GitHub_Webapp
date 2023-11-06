@@ -587,6 +587,7 @@ input[type=text], input[type=password] {
   margin-left: 0.5%;  
 }
 
+/* Styling for the "Speichern" button */
 #button-profil-speichern {
   width: 25%;
   height: 25%;
@@ -600,17 +601,43 @@ input[type=text], input[type=password] {
   font-size: 1em; 
   cursor: pointer;
   transition: background-color 0.3s ease; 
+  float: left; /* Float the button to the left */
 }
 
 #button-profil-speichern:hover {
   background-color: var(--primary-color); 
   color: var(--link-color);
 }
+
+/* Styling for the "E-Mail ändern" button */
+#button-email-aendern {
+  width: 25%;
+  height: 25%;
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  color: var(black); 
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  float: left; /* Float the button to the left */
+  margin-left: 10px; /* Add margin to separate the buttons */
+}
+
+#button-email-aendern:hover {
+  background-color: var(--primary-color); 
+  color: var(--link-color);
+}
+
   /* ------------------------profil-uebersicht.html---------------------------------------- */
 
 #dein-fortschritt {
   color: var(--text-color);
 }
+
 
 .fortschrittsbalken-div {
   display: flex;
@@ -779,7 +806,7 @@ input[type=text], input[type=password] {
   
 #button-registrierung {
  width: 18%;
- background-color: var(--primary-color);
+ background-color: red;
  border: none;
  border-radius: 20px; 
  padding: 10px 20px; 
