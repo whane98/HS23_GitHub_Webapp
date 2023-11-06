@@ -1,9 +1,9 @@
-import { supa } from "/supabase.js";
+import { supa } from "../supabase.js";
 
 console.log("00 JavaScript verbunden")
 
 let trainingStarted = false;
-const button = document.getElementById('button-login');
+const button = document.getElementById('button-login-start');
 
 button.addEventListener('click', function() {
     if (!trainingStarted) {
