@@ -1,4 +1,3 @@
-// Assuming you have already initialized Supabase client and connected to your table
 import { supa } from "/supabase.js";
 
 console.log("00 JavaScript verbunden");
@@ -44,6 +43,9 @@ window.toggleTrainingState = async function() {
 
         // Successfully updated user points
         console.log("User points updated successfully:", updateData);
+
+        // Redirect to profil-uebersicht.html
+        window.location.href = '../profil-uebersicht.html';
     }
 
     // Toggle the "active" class on the button element

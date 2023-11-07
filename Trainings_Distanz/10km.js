@@ -44,6 +44,9 @@ window.toggleTrainingState = async function() {
 
         // Successfully updated user points
         console.log("User points updated successfully:", updateData);
+
+        // Redirect to profil-uebersicht.html
+        window.location.href = '../profil-uebersicht.html';
     }
 
     // Toggle the "active" class on the button element
