@@ -33,8 +33,6 @@ async function updateGazelle() {
 // Call the function to update the Gazelle update
 updateGazelle();
 
-
-
 async function updateWelcomeMessage() {
   try {
     const user = supa.auth.user();
@@ -115,10 +113,9 @@ function drawProgress(punkteVon, deine_punkte, punkteBis) {
   const percentage =
     ((deine_punkte - punkteVon) / (punkteBis - punkteVon)) * 100;
 
-    console.log(percentage);
+  console.log(percentage);
 
   // Update the progress bar width
   const innerBar = document.getElementById("inner-bar");
   innerBar.style.width = `${percentage}%`;
-
 }
