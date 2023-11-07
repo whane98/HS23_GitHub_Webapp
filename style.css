@@ -451,6 +451,11 @@ a:visited {
      background-color: var(--primary-color); 
  }
 
+ #button-login-start.active {
+  background-color: red;
+  color: white; /* Change text color to white when button is active */
+}
+
 #button-login {
     width: 13%;
     background-color: var(--text-color);
