@@ -54,21 +54,8 @@ levelUebersichtElements.forEach(function(element) {
     box4.addEventListener('click', handleBoxClick);
 });
 
-   // Do something with the individual 'level-uebersicht-box' elements
-    // For example, you can access their children like this:
-    // var box1Title = box1.querySelector('.level-uebersicht-titel');
-    // var box2Description = box2.querySelector('p');
-    // ... and so on
-
-    // Select the button element
-
-
-
 
 // Now we go for signup ------------------------------------------------------------------------------------
-
-
-
 
 async function signUp() {
     const lastname = document.getElementById('lastname').value;

@@ -1,6 +1,6 @@
   /* ------------------------Document Reset---------------------------------------- */
 
-* {
+  * {
     margin: 0;
     padding: 0;
     border: 0;
@@ -10,14 +10,14 @@
     vertical-align: baseline;
     background: transparent;
   }
-  
+
   /* 1. Box sizing rules */
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
-  
+
   /* 2. Remove default margin */
   body,
   h1,
@@ -31,18 +31,18 @@
   dd {
     margin: 0;
   }
-  
+
   /* 3. Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
   ul[role='list'],
   ol[role='list'] {
     list-style: none;
   }
-  
+
   /* 4. Set core root defaults */
   html:focus-within {
     scroll-behavior: smooth;
   }
-  
+
   /* 5. Set core body defaults */
   body {
     min-height: 100vh;
@@ -51,19 +51,19 @@
     width: 100%;
     background-color: rgb(31, 29, 29);
   }
-  
+
   /* 6. A elements that don't have a class get default styles */
   a:not([class]) {
     text-decoration-skip-ink: auto;
   }
-  
+
   /* 7. Make images easier to work with */
   img,
   picture {
     max-width: 100%;
-    display: block; 
+    display: block;
   }
-  
+
   /* 8. Inherit fonts for inputs and buttons */
   input,
   button,
@@ -71,20 +71,20 @@
   select {
     font: inherit;
   }
-  
+
   /* 9. Remove all animations, transitions and smooth scroll for people that prefer not to see them */
   @media (prefers-reduced-motion: reduce) {
     html:focus-within {
-        scroll-behavior: auto;
+      scroll-behavior: auto;
     }
-  
+
     *,
     *::before,
     *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
     }
 
   }
@@ -99,432 +99,431 @@
     --link-color: black;
   }
 
-h1 {
-  color: var(--text-color);
-  font-size: 80px;
-  line-height: 1;
-  margin-bottom: 2rem;
-  word-wrap: break-word;
-}
-
-h1:hover {
-  color: var(--primary-color);
-}
- /* ------------------------details.html---------------------------------------- */
-
-.trainingseinheit-section {
-  height: 100vh;
-}
-
-#details-header {
-  background-color: red;
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  margin: 0;
-  margin-top: 6rem;
-  margin-left: 10rem;
-}
-
-#details-titel {
-  color: var(--text-color);
-  font-size: 6rem;
-  margin: 0;
-}
-
-@media (max-width: 1200px) {
-  #details-titel {
-      font-size: 5rem;
+  h1 {
+    color: var(--text-color);
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 2rem;
+    word-wrap: break-word;
   }
-}
 
-@media (max-width: 992px) {
-  #details-titel {
-      font-size: 4rem;
+  h1:hover {
+    color: var(--primary-color);
   }
-}
 
-@media (max-width: 768px) {
+  /* ------------------------details.html---------------------------------------- */
+
+  .trainingseinheit-section {
+    height: 100vh;
+  }
+
   #details-header {
+    background-color: red;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0;
+    margin-top: 6rem;
+    margin-left: 10rem;
+  }
+
+  #details-titel {
+    color: var(--text-color);
+    font-size: 6rem;
+    margin: 0;
+  }
+
+  @media (max-width: 1200px) {
+    #details-titel {
+      font-size: 5rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    #details-titel {
+      font-size: 4rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #details-header {
       margin-left: 0;
       text-align: center;
       flex-direction: column;
       align-items: center;
       margin-top: 3rem;
-  }
+    }
 
-  #details-titel {
+    #details-titel {
       font-size: 3rem;
+    }
   }
-}
 
-@media (max-width: 480px) {
-  #details-titel {
+  @media (max-width: 480px) {
+    #details-titel {
       font-size: 2rem;
+    }
   }
-}
 
 
-#details-titel:hover {
-color: var(--primary-color);
-cursor: pointer;
-}
+  #details-titel:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+  }
 
-.card-container {
-background-color: yellow;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-height: 75vh;
-margin-bottom: 8rem;
-}
+  .card-container {
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    margin-bottom: 8rem;
+  }
 
-.card-container-small {
-  background-color: aqua;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-height: 50vh;
-margin-bottom: 8rem;
-}
+  .card-container-small {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-bottom: 8rem;
+  }
 
-.card {
-width: 25vw;
-height: 30vh;
-background: linear-gradient(to bottom, #E7EF75 0%, #E7EF75 82%, #5e5f5e23 82%, #5e5f5e23 100%);
-color: var(--text-color);
-border-radius: 30px;
-margin: 2rem;
-display: flex;
-align-items: center;
-font-size: 1.5em;
-overflow: hidden;
-
-}
-
-.image-container {
-position: relative;
-width: 100%; /* Set width to 100% to make sure the image covers the entire container */
-height: 100%; /* Set height to 100% to make sure the image covers the entire container */
-margin: 0;
-}
-
-.card-image {
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 6%;
-transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
-overflow: hidden;
-}
-
-.image-container:hover .card-image {
-transform: scale(1.1); /* Scale the image up by 10% on hover */
-}
-
-
-.image-container span {
-position: absolute;
-bottom: 0;
-width: 100%; /* Set width to 100% to cover the entire bottom of the image container */
-text-align: center; /* Center the text horizontally */
-background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
-color: var(--text-color);
-font-size: 1em;
-}
-
-.trainingseinheit-section {
-  background-color: aquamarine;
-  width: 100%;
-  margin-bottom: 2rem; /* Set the margin between sections as desired */
-}
-
-.titel-trainingseinheit {
-  width: 100%;
-  font-size: 3rem;
-  margin-top: 4rem;
-}
-
-h2.titel-trainingseinheit {
-  background-color: blue;
-  margin-left: 10rem;
-  width: auto;
-}
-
-@media (max-width: 1200px) {
   .card {
+    width: 25vw;
+    height: 30vh;
+    background: linear-gradient(to bottom, #E7EF75 0%, #E7EF75 82%, #5e5f5e23 82%, #5e5f5e23 100%);
+    color: var(--text-color);
+    border-radius: 30px;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    overflow: hidden;
+
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6%;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+
+  .image-container:hover .card-image {
+    transform: scale(1.1);
+  }
+
+
+  .image-container span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /* Center the text horizontally */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background for better text readability */
+    color: var(--text-color);
+    font-size: 1em;
+  }
+
+  .trainingseinheit-section {
+    background-color: aquamarine;
+    width: 100%;
+    margin-bottom: 2rem;
+    /* Set the margin between sections as desired */
+  }
+
+  .titel-trainingseinheit {
+    width: 100%;
+    font-size: 3rem;
+    margin-top: 4rem;
+  }
+
+  h2.titel-trainingseinheit {
+    background-color: blue;
+    margin-left: 10rem;
+    width: auto;
+  }
+
+  @media (max-width: 1200px) {
+    .card {
       width: 30vw;
       margin: 1.5rem;
-  }
-  .card-container-small .card {
+    }
+
+    .card-container-small .card {
       width: 45vw;
       margin: 1.5rem;
-  }
+    }
 
-  .trainingseinheit-section {
+    .trainingseinheit-section {
       margin-bottom: 5rem;
+    }
   }
-}
 
-@media (max-width: 992px) {
-  .card {
+  @media (max-width: 992px) {
+    .card {
       width: 35vw;
       margin: 1rem;
-  }
-  .card-container-small .card {
+    }
+
+    .card-container-small .card {
       width: 50vw;
       margin: 1rem;
-  }
+    }
 
-  .trainingseinheit-section {
+    .trainingseinheit-section {
       margin-bottom: 5rem;
+    }
   }
-}
 
-@media (max-width: 768px) {
-  .card-container,
-  .card-container-small {
+  @media (max-width: 768px) {
+
+    .card-container,
+    .card-container-small {
       justify-content: center;
       margin-bottom: 1rem;
-  }
-  .card {
+    }
+
+    .card {
       width: 70vw;
       height: 25vh;
       margin: 0.5rem;
+    }
+
+
   }
 
-  
-}
 
+  /* ------------------------details-v2.html---------------------------------------- */
 
-/* ------------------------details-v2.html---------------------------------------- */
-
-#main-details {
-  height: auto;
-  padding-bottom: 5rem;
-}
-
-.trainingsart-div {
- /* background-color: #323432;
-  border-radius: 20px; */
-  margin: 0 20% 3% 14%;
-  margin-top: 10%;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-}
-
-.trainingsart-div p {
-  font-size: 2.5rem;
-  font-weight: 800;
-  text-align: left;
-  color: white;
+  #main-details {
+    height: auto;
+    padding-bottom: 5rem;
   }
 
-.cards-details-v2 {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 3rem;
-  margin: 0 15% 5% 15%;
-}
-
-.card-details-v2 {
-  background-color: var(--text-color);
-  height: auto;
-  border-radius: 20px;
- /* padding: 30px; */
-}
-
-.card-details-v2:hover {
-  cursor: pointer;
-}
-
-.level-uebersicht-titel-v2 {
-  color: black;
-  margin: 4% 0 4% 10%;
-}
-
-.card-image-v2 {
-  object-fit: contain;
-  transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
-  overflow: hidden;
-  border-radius: 20px 20px 0 0;
+  .trainingsart-div {
+    margin: 0 20% 3% 14%;
+    margin-top: 10%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
   }
 
- /* If screen is larger than 600px, do it in 2 column */
- @media (min-width: 600px) {
-  .cards-details-v2 { 
-    grid-template-columns: repeat(2, 1fr); 
-}
- }
+  .trainingsart-div p {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: left;
+    color: white;
+  }
 
-/* ------------------------Trainingseinheiten DONE---------------------------------------- */
+  .cards-details-v2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 3rem;
+    margin: 0 15% 5% 15%;
+  }
 
-/*
-.distanz-container, .intervall-container, .sprint-container, .dauerlauf-container,.steigerungslauf-container {
-  width: 100vw;
-}
+  .card-details-v2 {
+    background-color: var(--text-color);
+    height: auto;
+    border-radius: 20px;
+  }
 
-.titel-distanz, .titel-intervall, .titel-sprint, .titel-dauerlauf, .titel-steigerungslauf {
-  font-size: 3rem;
-margin-left: 12rem;
-margin-top: 4rem;
-}
-*/
+  .card-details-v2:hover {
+    cursor: pointer;
+  }
+
+  .level-uebersicht-titel-v2 {
+    color: black;
+    margin: 4% 0 4% 10%;
+  }
+
+  .card-image-v2 {
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect on hover */
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+  }
+
+  /* If screen is larger than 600px, do it in 2 column */
+  @media (min-width: 600px) {
+    .cards-details-v2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
   /* ------------------------header---------------------------------------- */
 
-header {
-  height: 4rem;
-  background-color: #262726;
-  width: 100%;
-  vertical-align: center;
-  text-align: center;
-}
+  header {
+    height: 4rem;
+    background-color: #262726;
+    width: 100%;
+    vertical-align: center;
+    text-align: center;
+  }
 
-#logo-header-div {
-  height: 4rem;
-  width: 6rem;
-  float: left; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  #logo-header-div {
+    height: 4rem;
+    width: 6rem;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-#logo-header {
-  width: 80%;
-  float: right;
-  margin: 0;
-}
+  #logo-header {
+    width: 80%;
+    float: right;
+    margin: 0;
+  }
 
-#profilbild-und-einstellungen-div {
-  height: 4rem;
-  width: 6rem;
-  float: right; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  #profilbild-und-einstellungen-div {
+    height: 4rem;
+    width: 6rem;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-#profilbild-header, #einstellungen-header {
-  width: auto;
-  max-height: 50%;
-  float: left;
-  padding-right: 1.5rem;
-}
+  #profilbild-header,
+  #einstellungen-header {
+    width: auto;
+    max-height: 50%;
+    float: left;
+    padding-right: 1.5rem;
+  }
 
 
   /* ------------------------general again---------------------------------------- */
 
 
-h2 {
+  h2 {
     color: var(--text-color);
-}
-
-a:link {
-    color: var(--link-color);
-    text-decoration: none;
   }
-  
-a:visited {
+
+  a:link {
     color: var(--link-color);
     text-decoration: none;
   }
 
-#button-login-start {
-     width: 13%;
-     background-color: var(--text-color);
-     border: none;
-     border-radius: 20px; 
-     padding: 10px 20px; 
-     color: var(--link-color); 
-     text-align: center;
-     text-decoration: none;
-     font-size: 1rem; 
-     cursor: pointer;
-     transition: background-color 0.3s ease; /* Smooth transition for background color change */
-     margin-bottom: 1rem;
- }
- 
- #button-login-start:hover {
-     background-color: var(--primary-color); 
- }
+  a:visited {
+    color: var(--link-color);
+    text-decoration: none;
+  }
 
- #button-login-start.active {
-  background-color: red;
-  color: white; /* Change text color to white when button is active */
-}
-
-#button-login {
+  #button-login-start {
     width: 13%;
     background-color: var(--text-color);
     border: none;
-    border-radius: 20px; 
-    padding: 10px 20px; 
-    color: var(--link-color); 
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--link-color);
     text-align: center;
     text-decoration: none;
-    font-size: 1rem; 
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color change */
     margin-bottom: 1rem;
-}
+  }
 
-#button-login:hover {
-    background-color: var(--primary-color); 
-}
+  #button-login-start:hover {
+    background-color: var(--primary-color);
+  }
 
-#motivation {
+  #button-login-start.active {
+    background-color: red;
+    color: white;
+    /* Change text color to white when button is active */
+  }
+
+  #button-login {
+    width: 13%;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--link-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color change */
+    margin-bottom: 1rem;
+  }
+
+  #button-login:hover {
+    background-color: var(--primary-color);
+  }
+
+  #motivation {
     color: var(--text-color);
-}
+  }
 
-#registrierungs-frage {
-  color: var(--text-color);
-}
+  #registrierungs-frage {
+    color: var(--text-color);
+  }
 
-#registrierungs-frage:hover {
-  color: var(--primary-color);
-}
+  #registrierungs-frage:hover {
+    color: var(--primary-color);
+  }
 
-form {   
-  border-bottom: 1px solid white;   
-}   
+  form {
+    border-bottom: 1px solid white;
+  }
 
-input[type=text], input[type=password] {   
-  width: 100%;   
-  margin: 8px 0;  
-  padding: 12px 0px;   
-  display: inline-block;   
-  border-bottom: 1px solid white;   
-  box-sizing: border-box;   
-  color: var(--text-color);
-} 
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 0px;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    color: var(--text-color);
+  }
 
-#angemeldet-bleiben {
-  color: var(--text-color);
-}
+  #angemeldet-bleiben {
+    color: var(--text-color);
+  }
 
 
-/*
+  /*
 
 .balken {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  width: 100%; /* Ensure the .balken div takes the full width of its parent */ /*
+  width: 100%; /* Ensure the .balken div takes the full width of its parent */
+  /*
   gap: 1rem; /* Adjust the margin-bottom value as needed */
 
-/*
+  /*
 
 .balken-left {
   display: flex;
   flex-direction: column;
-  width: 100%; /* Ensure the .balken div takes the full width of its parent */ /*
+  width: 100%; /* Ensure the .balken div takes the full width of its parent */
+  /*
   gap: 1rem; /* Adjust the margin-bottom value as needed */
 
 
-/*
+  /*
 
 #balken-5 {
   width: 30%;
@@ -561,162 +560,168 @@ input[type=text], input[type=password] {
 
   /* ------------------------profil-bearbeiten.html---------------------------------------- */
 
-.profil-div {
-  margin: 10% 20% 6% 20%;
-}
+  .profil-div {
+    margin: 10% 20% 6% 20%;
+  }
 
-#profil-titel {
-  color: var(--text-color);
-  margin-bottom: 2rem;
-}
+  #profil-titel {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+  }
 
-#profil-titel:hover {
-  color: var(--primary-color);
-}
+  #profil-titel:hover {
+    color: var(--primary-color);
+  }
 
-.login-box-v2 {
-  margin-left: 0.5%;
-  width: auto;
-}
+  .login-box-v2 {
+    margin-left: 0.5%;
+    width: auto;
+  }
 
-.login-formular-v2 {
-  width: 50%;
-  margin-bottom: 1rem;
-}
+  .login-formular-v2 {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
 
-#profil-buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin-top: 3rem;
-  margin-left: 0.5%;  
-}
+  #profil-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-left: 0.5%;
+  }
 
-/* Styling for the "Speichern" button */
-#button-profil-speichern {
-  width: 25%;
-  height: 25%;
-  background-color: var(--text-color);
-  border: none;
-  border-radius: 20px; 
-  padding: 10px 20px; 
-  color: var(--text-color); 
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em; 
-  cursor: pointer;
-  transition: background-color 0.3s ease; 
-  float: left; /* Float the button to the left */
-}
+  /* Styling for the "Speichern" button */
+  #button-profil-speichern {
+    width: 25%;
+    height: 25%;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: left;
+    /* Float the button to the left */
+  }
 
-#button-profil-speichern:hover {
-  background-color: var(--primary-color); 
-  color: var(--link-color);
-}
+  #button-profil-speichern:hover {
+    background-color: var(--primary-color);
+    color: var(--link-color);
+  }
 
-/* Styling for the "E-Mail ändern" button */
-#button-email-aendern {
-  width: 25%;
-  height: 25%;
-  background-color: var(--text-color);
-  border: none;
-  border-radius: 20px; 
-  padding: 10px 20px; 
-  color: var(black); 
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em; 
-  cursor: pointer;
-  transition: background-color 0.3s ease; 
-  float: left; /* Float the button to the left */
-  margin-left: 10px; /* Add margin to separate the buttons */
-}
+  /* Styling for the "E-Mail ändern" button */
+  #button-email-aendern {
+    width: 25%;
+    height: 25%;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(black);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: left;
+    /* Float the button to the left */
+    margin-left: 10px;
+    /* Add margin to separate the buttons */
+  }
 
-#button-email-aendern:hover {
-  background-color: var(--primary-color); 
-  color: var(--link-color);
-}
+  #button-email-aendern:hover {
+    background-color: var(--primary-color);
+    color: var(--link-color);
+  }
 
   /* ------------------------profil-uebersicht.html---------------------------------------- */
 
-#dein-fortschritt {
-  color: var(--text-color);
-}
+  #dein-fortschritt {
+    color: var(--text-color);
+  }
 
 
-.fortschrittsbalken-div {
-  display: flex;
-  align-items: center;
-  height: 6rem;
-  width: 100%;
-}
+  .fortschrittsbalken-div {
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+  }
 
-.outer-bar {
-  width: 100%;
-  height: 2rem;
-  border: 1px solid white;
-  border-radius: 25px;
-  display: flex;
-}
+  .outer-bar {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid white;
+    border-radius: 25px;
+    display: flex;
+  }
 
-#inner-bar {
-  height: 100%;
- /* width: 50%; */
-  background: linear-gradient(45deg, orange, #E7EF75 );
-  border-radius: 25px 0 0 25px;
-}
+  #inner-bar {
+    height: 100%;
+    background: linear-gradient(45deg, orange, #E7EF75);
+    border-radius: 25px 0 0 25px;
+  }
 
-#profil-buttons-v2 {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
+  #profil-buttons-v2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
 
-#button-level-bearbeiten, #button-profil-bearbeiten {
-  width: 25%;
-  height: auto;
-  background-color: var(--text-color);
-  border: none;
-  border-radius: 20px; 
-  padding: 10px 20px; 
-  color: var(--text-color);
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em; 
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for background color change */
-  margin-top: 3rem;
-}
-  
-#button-level-bearbeiten:hover, #button-profil-bearbeiten:hover { 
-  cursor: pointer;
-  color: var(--link-color);
-  background-color: var(--primary-color);
-}
+  #button-level-bearbeiten,
+  #button-profil-bearbeiten {
+    width: 25%;
+    height: auto;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color change */
+    margin-top: 3rem;
+  }
 
-  /* ------------------------kei ahnig wo da here ghört---------------------------------------- */
+  #button-level-bearbeiten:hover,
+  #button-profil-bearbeiten:hover {
+    cursor: pointer;
+    color: var(--link-color);
+    background-color: var(--primary-color);
+  }
+
+  /* ------------------------buttons kontakt---------------------------------------- */
 
 
-#button-kontakt {
-  width: 13%;
-  background-color: #323432;
-  border: none;
-  border-radius: 20px; 
-  padding: 10px 20px; 
-  color: var(--text-color); 
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em; 
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for background color change */
-  margin-top: 3rem;
-  margin-left: 10.5rem;
-}
-  
-#button-kontakt:hover {
-  background-color: var(--primary-color); 
-  color: var(--link-color);
-}
+  #button-kontakt {
+    width: 13%;
+    background-color: #323432;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color change */
+    margin-top: 3rem;
+    margin-left: 10.5rem;
+  }
+
+  #button-kontakt:hover {
+    background-color: var(--primary-color);
+    color: var(--link-color);
+  }
 
   /* ------------------------registrierung.html---------------------------------------- */
 
@@ -725,10 +730,10 @@ input[type=text], input[type=password] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
-    height: 50rem;  
+    align-items: center;
+    height: 50rem;
   }
-  
+
   .login-formular {
     width: 30%;
     margin-bottom: 4rem;
@@ -737,91 +742,100 @@ input[type=text], input[type=password] {
   #logo-home {
     width: 15%;
     margin-bottom: 2rem;
-}
-
-#button-weiterscrollen {
-  width: 13%;
-  background-color: var(--text-color);
-  border: none;
-  border-radius: 20px; 
-  padding: 10px 20px; 
-  color: var(--link-color); 
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem; 
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for background color change */
   }
 
-#button-weiterscrollen:hover {
-  background-color: var(--primary-color); 
-}
-/*
-.level-uebersicht {
-  background-color: rgb(0, 191, 255);
-}
-*/
+  #button-weiterscrollen {
+    width: 13%;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--link-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color change */
+  }
+
+  #button-weiterscrollen:hover {
+    background-color: var(--primary-color);
+  }
+
   #level-uebersicht-text-v3 {
     height: 15vh;
     /* background-color: orange; */
     margin-left: 35%;
   }
 
-#waehle-niveau {
-  color: white;
-}
+  #waehle-niveau {
+    color: white;
+  }
 
-.level-uebersicht-titel {
+  .level-uebersicht-titel {
     color: black;
     margin-bottom: 0.5em;
   }
 
-  #level-uebersicht-box-1, #level-uebersicht-box-2, #level-uebersicht-box-3, #level-uebersicht-box-4 { 
-      height: auto;
-      width: 65%;
-      margin-bottom: 2rem;
-      padding: 30px;
-      background-color: var(--text-color);
-      border-radius: 20px 0 0 20px;
-      margin-left: auto;
-      margin-right: 0;
-      cursor: pointer;
-  }
-
-#level-uebersicht-box-4 { 
+  #level-uebersicht-box-1,
+  #level-uebersicht-box-2,
+  #level-uebersicht-box-3,
+  #level-uebersicht-box-4 {
     height: auto;
-    width: 65%; 
+    width: 65%;
+    margin-bottom: 2rem;
     padding: 30px;
     background-color: var(--text-color);
     border-radius: 20px 0 0 20px;
     margin-left: auto;
     margin-right: 0;
     cursor: pointer;
-}
-  
-  #level-uebersicht-box-1:hover, #level-uebersicht-box-2:hover, #level-uebersicht-box-3:hover, #level-uebersicht-box-4:hover { 
-      background-color: var(--primary-color);
   }
-  
+
+  #level-uebersicht-box-4 {
+    height: auto;
+    width: 65%;
+    padding: 30px;
+    background-color: var(--text-color);
+    border-radius: 20px 0 0 20px;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+  }
+
+  #level-uebersicht-box-1:hover,
+  #level-uebersicht-box-2:hover,
+  #level-uebersicht-box-3:hover,
+  #level-uebersicht-box-4:hover {
+    background-color: var(--primary-color);
+  }
+
   .button-registrierung-div {
-   /* background-color: red; */
+    /* background-color: red; */
     height: 30vh;
     margin-left: 35%;
   }
-  
-#button-registrierung {
- width: 18%;
- background-color: red;
- border: none;
- border-radius: 20px; 
- padding: 10px 20px; 
- color: var(--link-color); 
- text-align: center;
- text-decoration: none;
- font-size: 1em; 
- cursor: pointer;
- transition: background-color 0.3s ease;
-}
+
+  #button-registrierung {
+    width: 18%;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--link-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #button-registrierung:hover {
+    background-color: var(--primary-color);
+  }
+
+
 
   /* ------------------------level-bearbeiten.html---------------------------------------- */
 
@@ -832,7 +846,7 @@ input[type=text], input[type=password] {
     justify-content: center;
     margin-left: 15%;
     color: var(--text-color);
-} 
+  }
 
   .cards-v2 {
     max-width: 1200px;
@@ -841,124 +855,135 @@ input[type=text], input[type=password] {
     grid-gap: 3rem;
     margin: 0 15% 5% 15%;
   }
-  
+
   .card-v2 {
     background-color: var(--text-color);
     padding: 1rem;
     height: auto;
-    border-radius: 20px; 
+    border-radius: 20px;
     padding: 30px;
   }
 
   .card-v2:hover {
     cursor: pointer;
   }
-  
-#button-speichern-div { 
+
+  #button-speichern-div {
     width: 100%;
     height: 20vh;
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
-}
+  }
 
 
-#button-speichern {
+  #button-speichern {
     width: 13%;
     background-color: var(--text-color);
     border: none;
-    border-radius: 20px; 
-    padding: 10px 20px; 
-    color: var(--link-color); 
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--link-color);
     text-align: center;
     text-decoration: none;
-    font-size: 1rem; 
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color change */
     margin-left: 15%;
   }
-  
-#button-speichern:hover {
-    background-color: var(--primary-color); 
+
+  #button-speichern:hover {
+    background-color: var(--primary-color);
   }
-  
-  
+
+
   /* If screen is larger than 600px, do it in 2 column */
   @media (min-width: 600px) {
-    .cards-v2 { 
-      grid-template-columns: repeat(2, 1fr); 
-  }
-  
-  
+    .cards-v2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+
   }
 
 
   /* ------------------------training-start.html---------------------------------------- */
 
 
-.trainings-text-div {
-  margin: 10% 20% 6% 20%;
-}
+  .trainings-text-div {
+    margin: 10% 20% 6% 20%;
+  }
 
-#trainings-text {
-  color: var(--text-color);
-  line-height: 1.8;
-  word-wrap: break-word;
-}
+  .trainings-text {
+    color: var(--text-color);
+    line-height: 1.8;
+    word-wrap: break-word;
+  }
 
-#button-training-starten {
-  text-align: center;
-  margin-bottom: 10%;
-}
+  #button-training-starten {
+    text-align: center;
+    margin-bottom: 10%;
+  }
 
 
   /* ------------------------footer-everywhere---------------------------------------- */
 
 
-footer {
-  height: 8rem;
-  background-color: #262726;
-  width: 100%;
-  display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
-}
+  footer {
+    height: 8rem;
+    background-color: #262726;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+  }
 
-#footer-div {
-  text-align: center;
-  display: flex;
-  gap: 1rem;
-}
+  #footer-div {
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+  }
 
-#telegram, #informaticon, #twitter, #facebook, #instagram {
-  height: 2rem;
-}
+  #telegram,
+  #informaticon,
+  #twitter,
+  #facebook,
+  #instagram {
+    height: 2rem;
+  }
 
 
   /* ------------------------kontakt.html---------------------------------------- */
 
-  #runup-mail, #runup-telefonnummer {
+  #runup-mail,
+  #runup-telefonnummer {
     color: var(--text-color);
   }
 
-  #runup-mail:hover, #runup-telefonnummer:hover {
+  #runup-mail:hover,
+  #runup-telefonnummer:hover {
     color: var(--primary-color);
   }
 
-#iframe-maps {
-  width: 100%;
-  height: 40vh;
-}
+  #iframe-maps {
+    width: 100%;
+    height: 40vh;
+  }
 
-#maps {
-  width: 100%;
-  height: 100%;
-}
+  #maps {
+    width: 100%;
+    height: 100%;
+  }
 
   /* ------------------------make it responsive please---------------------------------------- */
 
 
-  @media(max-width: 1400px) {       /*   767px   */
+  @media(max-width: 1400px) {
+
+    /*   767px   */
     #button-login {
       width: 15%;
     }
@@ -966,19 +991,19 @@ footer {
     #button-login-start {
       width: 15%;
     }
-  
+
     #button-registrierung {
       width: 22%;
     }
-  
+
     #logo-home {
       width: 20%;
     }
-  
+
     #balken-1 {
       margin-top: -27.5%;
     }
-    
+
     #balken-3 {
       margin-top: 10%;
     }
@@ -995,67 +1020,71 @@ footer {
       width: 30%;
     }
 
-    #button-level-bearbeiten, #button-profil-bearbeiten {
+    #button-level-bearbeiten,
+    #button-profil-bearbeiten {
       width: 30%;
 
     }
 
     #button-weiterscrollen {
-     width: 18%;
+      width: 18%;
     }
 
   }
-  
 
-@media(max-width: 1000px) {       /*   574px */
-  #button-login {
-    width: 28%;
-}
 
-#button-login-start {
-  width: 28%;
-}
+  @media(max-width: 1000px) {
 
-  #button-registrierung {
-    width: 40%;
+    /*   574px */
+    #button-login {
+      width: 28%;
+    }
+
+    #button-login-start {
+      width: 28%;
+    }
+
+    #button-registrierung {
+      width: 40%;
+    }
+
+    #logo-home {
+      width: 29%;
+    }
+
+    .login-formular {
+      width: 50%;
+    }
+
+    #balken-1 {
+      margin-top: -49%;
+      width: 23%;
+    }
+
+    #balken-3 {
+      margin-top: 30%;
+      width: 100%;
+    }
+
+    #button-speichern {
+      width: 25%;
+    }
+
+    .login-formular-v2 {
+      width: 100%;
+    }
+
+    #button-profil-speichern {
+      width: 60%;
+    }
+
+    #button-level-bearbeiten,
+    #button-profil-bearbeiten {
+      width: 100%;
+    }
+
+    #button-weiterscrollen {
+      width: 24%;
+    }
+
   }
-
-#logo-home {
-  width: 29%;
-}
-
-.login-formular {
-  width: 50%;
-}
-
-#balken-1 {
-  margin-top: -49%;
-  width: 23%;
-}
-
-#balken-3 {
-  margin-top: 30%;
-  width: 100%;
-}
-
-#button-speichern {
-  width: 25%;
-}
-
-.login-formular-v2 {
-  width: 100%;
-}
-
-#button-profil-speichern {
-  width: 60%;
-}
-
-#button-level-bearbeiten, #button-profil-bearbeiten {
-  width: 100%;
-}
-
-#button-weiterscrollen {
-  width: 24%;
- }
-
-}
