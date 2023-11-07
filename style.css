@@ -810,7 +810,7 @@ input[type=text], input[type=password] {
   
 #button-registrierung {
  width: 18%;
- background-color: red;
+ background-color: white;
  border: none;
  border-radius: 20px; 
  padding: 10px 20px; 
@@ -821,6 +821,12 @@ input[type=text], input[type=password] {
  cursor: pointer;
  transition: background-color 0.3s ease;
 }
+
+#button-registrierung:hover {
+  background-color: var(--primary-color);
+}
+
+
 
   /* ------------------------level-bearbeiten.html---------------------------------------- */
 
