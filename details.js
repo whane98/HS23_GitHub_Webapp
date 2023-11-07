@@ -1,4 +1,3 @@
-// Assuming you have already initialized Supabase client and connected to your table
 import { createClient } from "@supabase/supabase-js";
 
 const supabaseUrl = 'Yhttps://sirlqkvgtuxlsfeeymfz.supabase.co';
