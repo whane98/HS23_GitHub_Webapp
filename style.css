@@ -208,9 +208,7 @@
   .image-container {
     position: relative;
     width: 100%;
-    /* Set width to 100% to make sure the image covers the entire container */
     height: 100%;
-    /* Set height to 100% to make sure the image covers the entire container */
     margin: 0;
   }
 
@@ -220,13 +218,11 @@
     object-fit: cover;
     border-radius: 6%;
     transition: transform 0.3s ease;
-    /* Add a smooth transition effect on hover */
     overflow: hidden;
   }
 
   .image-container:hover .card-image {
     transform: scale(1.1);
-    /* Scale the image up by 10% on hover */
   }
 
 
@@ -234,7 +230,6 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Set width to 100% to cover the entire bottom of the image container */
     text-align: center;
     /* Center the text horizontally */
     background-color: rgba(0, 0, 0, 0.5);
@@ -320,8 +315,6 @@
   }
 
   .trainingsart-div {
-    /* background-color: #323432;
-  border-radius: 20px; */
     margin: 0 20% 3% 14%;
     margin-top: 10%;
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -346,7 +339,6 @@
     background-color: var(--text-color);
     height: auto;
     border-radius: 20px;
-    /* padding: 30px; */
   }
 
   .card-details-v2:hover {
@@ -372,20 +364,6 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
-
-  /* ------------------------Trainingseinheiten DONE---------------------------------------- */
-
-  /*
-.distanz-container, .intervall-container, .sprint-container, .dauerlauf-container,.steigerungslauf-container {
-  width: 100vw;
-}
-
-.titel-distanz, .titel-intervall, .titel-sprint, .titel-dauerlauf, .titel-steigerungslauf {
-  font-size: 3rem;
-margin-left: 12rem;
-margin-top: 4rem;
-}
-*/
 
   /* ------------------------header---------------------------------------- */
 
@@ -720,7 +698,7 @@ margin-top: 4rem;
     background-color: var(--primary-color);
   }
 
-  /* ------------------------kei ahnig wo da here ghört---------------------------------------- */
+  /* ------------------------buttons kontakt---------------------------------------- */
 
 
   #button-kontakt {
@@ -785,11 +763,6 @@ margin-top: 4rem;
     background-color: var(--primary-color);
   }
 
-  /*
-.level-uebersicht {
-  background-color: rgb(0, 191, 255);
-}
-*/
   #level-uebersicht-text-v3 {
     height: 15vh;
     /* background-color: orange; */

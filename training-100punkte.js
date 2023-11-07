@@ -57,6 +57,4 @@ window.toggleTrainingState = async function () {
   } else {
     startButton.textContent = "Training starten";
   }
-
-  // You can add further logic here, such as stopping the training or performing other actions.
 };

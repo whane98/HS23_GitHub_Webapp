@@ -1,4 +1,3 @@
-// Assuming you have already initialized Supabase client and connected to your table
 import { supa } from "/supabase.js";
 
 console.log("00 JavaScript verbunden");
@@ -58,6 +57,4 @@ window.toggleTrainingState = async function () {
   } else {
     startButton.textContent = "Training starten";
   }
-
-  // You can add further logic here, such as stopping the training or performing other actions.
 };

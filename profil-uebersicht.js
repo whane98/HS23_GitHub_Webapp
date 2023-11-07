@@ -93,9 +93,6 @@ async function updateWelcomeMessage() {
         document.getElementById("dein-aktueller-punktestand").textContent =
           deine_punkte;
 
-        // console.log(deine_punkte)
-        // console.log(punkteBis)
-
         drawProgress(punkteVon, deine_punkte, punkteBis);
       }
     }
