@@ -27,8 +27,8 @@ window.toggleTrainingState = async function() {
         // Extract user points from the fetched data
         let userPoints = userData ? userData.deine_punkte : 0;
 
-        // Update user points (add 100)
-        userPoints += 100;
+        // Update user points (add 300)
+        userPoints += 300;
 
         // Update the user's points in the Supabase table
         const { data: updateData, error: updateError } = await supa
