@@ -116,3 +116,36 @@ function drawProgress(punkteVon, deine_punkte, punkteBis) {
   const innerBar = document.getElementById("inner-bar");
   innerBar.style.width = `${percentage}%`;
 }
+
+async function updateLevel() {
+
+    const { data: userData, error: userError } = await supa
+      .from("users")
+      .select("*")
+      .eq("user_id", supa.auth.user().id);
+
+    let aktuellePunkte = userData[0].deine_punkte
+ 
+    if (aktuellePunkte > 8999) {
+      await supa
+      .from("users")
+      .update({ level: 'Leistungssport' })
+      .eq("user_id", supa.auth.user().id);
+
+    } else if (aktuellePunkte > 4499) {
+      await supa
+      .from("users")
+      .update({ level: 'Erfahrene' })
+      .eq("user_id", supa.auth.user().id);
+
+    }  else if (aktuellePunkte > 1499) {
+      await supa
+      .from("users")
+      .update({ level: 'Fortgeschritten' })
+      .eq("user_id", supa.auth.user().id);
+    }
+}
+
+
+updateLevel()
+
