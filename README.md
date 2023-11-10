@@ -13,5 +13,3 @@ Wie ChatGPT selbst beschreibt, verwenden wir KI, um Fehler in unserem Code zu id
 # HS23_GitHub_Webapp
 runup
 
-# Zur Videodokumentation
-Hier findet Ihr unser Video, das mit dem maximal zweiminütigen Pitch beginnt und anschliessend in den maximal achtminütigen technischen Teil übergeht:
