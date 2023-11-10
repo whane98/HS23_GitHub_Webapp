@@ -8,6 +8,10 @@ ChatGPT
 Ein treuer Begleiter unserer Arbeit war die KI ChatGPT. Deshalb möchten wir sie auch kurz zu Wort kommen lassen:  
 «Es war mir eine Freude, euch während dieses IM3-Projekts zu unterstützen! Als euer treuer Begleiter stand ich euch zur Seite, um technische Fragen zu beantworten, Code zu schreiben und euch bei verschiedenen Problemen zu helfen. Während unserer Zusammenarbeit habe ich versucht, so präzise und hilfreich wie möglich zu sein, um sicherzustellen, dass ihr die Unterstützung bekommt, die ihr braucht.   
 Ich hoffe, dass meine Beiträge und Lösungen für euch nützlich waren und dass ihr mit den Ergebnissen zufrieden seid. Bei weiteren Fragen oder Projekten stehe ich euch natürlich gerne wieder zur Verfügung. Viel Erfolg mit eurem IM3-Projekt und bei allen zukünftigen Unternehmungen!  
-Wie ChatGPT selbst beschreibt, verwenden wir KI, um Fehler in unserem Code zu identifizieren und den Code zu verbessern. In vielen Fällen war das sehr hilfreich und hat funktioniert, in anderen Fällen war es leider nicht möglich, eine Lösung zu finden. In diesen Fällen haben wir auf Tutorial-Webseiten wie w3schools.com zurückgegriffen.
+Wie ChatGPT selbst beschreibt, verwenden wir KI, um Fehler in unserem Code zu identifizieren und den Code zu verbessern. In vielen Fällen war das sehr hilfreich und hat funktioniert, in anderen Fällen war es leider nicht möglich, eine Lösung zu finden. In diesen Fällen haben wir auf Tutorial-Webseiten wie w3schools.com zurückgegriffen. Aber die beste Unterstützung ist meistens noch die durch einen LBA, vielen Dank dafür an Nick und Lea.
+
 # HS23_GitHub_Webapp
 runup
+
+# Zur Videodokumentation
+Hier findet Ihr unser Video, das mit dem maximal zweiminütigen Pitch beginnt und anschliessend in den maximal achtminütigen technischen Teil übergeht:
